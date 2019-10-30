@@ -1,5 +1,5 @@
 import React from 'react';
-import {Title, Description} from './Typography'
+import {Title, Summary} from './Typography'
 import styled from 'styled-components';
 import PhotoMe from './PhotoMe.png'
 
@@ -23,11 +23,9 @@ const About = () => {
     return (
         <ModalContainer>
             <Title color='#000'>About</Title>
-            
             <Image src={PhotoMe} />
-
-            <Description color='#000'>I'm Joy van der Veeken, a multi-disciplinary creative living in London until I get deported back from whence I came due to the United Kingdom leaving the European Union.</Description>
-            <Description color='#000'>No one likes extended summaries of one's life, so here's several true facts about me.</Description>
+            <Summary color='#000'>I'm Joy van der Veeken, a multi-disciplinary creative living in London until I get deported back from whence I came due to the United Kingdom leaving the European Union.</Summary>
+            <Summary color='#000'>No one likes extended summaries of one's life, so here's several true facts about me.</Summary>
 
         </ModalContainer>
     )

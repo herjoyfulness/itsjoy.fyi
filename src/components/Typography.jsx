@@ -117,6 +117,10 @@ const Paragraph = styled.p `
     ${color};
 `
 
+// const List = styled.ul `
+
+// `
+
 export {
     Link,
     LinkTwo,
