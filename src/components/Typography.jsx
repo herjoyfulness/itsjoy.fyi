@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {color} from 'styled-system';
 
 const Hello = styled.h1 `
     font-family: Playfair Display;
@@ -77,8 +78,21 @@ const Title = styled.h2 `
     display: flex;
     align-items: flex-end;
     letter-spacing: -0.015em;
-    color: #FFFFFF;
+    ${color};
 `
+const Summary = styled.h2 `
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: -0.015em;
+    text-align: justify;
+    ${color};
+`
+
 const Description = styled.h3 `
     font-family: Playfair Display;
     font-style: normal;
@@ -88,7 +102,7 @@ const Description = styled.h3 `
     display: flex;
     align-items: flex-end;
     letter-spacing: -0.015em;
-    color: #FFFFFF;
+    ${color};
 `
 
 const Paragraph = styled.p `
@@ -100,7 +114,7 @@ const Paragraph = styled.p `
     display: flex;
     align-items: flex-end;
     letter-spacing: -0.015em;
-    color: #FFFFFF;
+    ${color};
 `
 
 export {
@@ -108,6 +122,7 @@ export {
     LinkTwo,
     Hello,
     Title,
+    Summary,
     Description,
     Paragraph
 }
