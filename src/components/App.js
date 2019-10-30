@@ -1,17 +1,21 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 // import styled from 'styled-components';
 import Navigation from './Navigation';
 import Hero from './Hero';
 import {Background, HeroWrap} from './Background';
+import About from './About'
 
 function App() {
   return (
-    <Background>
-      <HeroWrap>
-        <Navigation />
-        <Hero />
-      </HeroWrap>
-    </Background>
+    <Fragment>
+      <Background>
+        <HeroWrap>
+          <Navigation />
+          <Hero />
+        </HeroWrap>
+      </Background>
+      <About />
+    </Fragment>
   );
 }
 
