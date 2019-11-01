@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Hello} from './Typography';
+
+import {Hello} from './shared/Typography';
 
 const HelloText = styled.div `
     margin: auto;
