@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
-import {color, fontFamily, fontSize} from 'styled-system';
+import {color, fontFamily, fontSize, alignItems, textAlign} from 'styled-system';
 
 const Hello = styled.h1 `
     font-family: Playfair Display;
@@ -77,7 +77,7 @@ const Paragraph = styled.p `
 const List = styled.ul `
     display: flex;
     flex-direction: column;
-    align-items: center;
+    ${textAlign}
     list-style: none;
     margin: 0;
     padding: 16px 0;
@@ -89,7 +89,6 @@ const ListItem = styled.li `
 
 const ListText = styled.p `
     ${fontFamily};
-    text-align: center;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;

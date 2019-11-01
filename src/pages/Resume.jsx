@@ -30,25 +30,26 @@ const Resume = () => {
                 <Link to="/"><Back src={Close} /></Link>
             </Flex>
             
-            <Summary color='#000'>I'm Joy van der Veeken, a multi-disciplinary creative living in London until I get deported back from whence I came due to the United Kingdom leaving the European Union.</Summary>
-            <Summary color='#000'>No one likes extended summaries of one's life, so here's several true facts about me.</Summary>
-            <List>
+            <Summary color='#000'>My approach to life and work is influenced by a quote from Douglas Adams’ Life, the Universe and Everything Else: “It is a mistake to think you can solve any major problems just with potatoes.”. I’m a fan of clean and simple design with high attention to detail. My passions range from cooking dishes which people rave about to their colleagues, to the falling leaves during autumn, but lie mainly in technology.</Summary>
+            
+            <List textAlign='left'>
                 <ListItem>
-                    <ListText fontFamily='PlayFair Display'>No 1 - My name appears in every single English dictionary</ListText>
-                    <ListText fontFamily='Lato'>Joy • /dʒɔɪ/ noun • a feeling of great pleasure and happiness</ListText>
+                    <ListText fontFamily='PlayFair Display'>I have been a designer and photographer at House of Joy since 2010</ListText>
+                    <ListText fontFamily='Lato'>For the past 9 years I’ve translated my clients’ visions into effective branding, print, websites and videos using photography as a supportive medium. I started operating under my own brandname as a designer and photographer 4 years after my first freelance job for a jeweler.</ListText>
                 </ListItem>
 
                 <ListItem>
-                    <ListText fontFamily='PlayFair Display'>No 2 - I cook a banging paella</ListText>
+                    <ListText fontFamily='PlayFair Display'>I was a professional cat cuddler at Dierenopvang Breda in 2019</ListText>
                 </ListItem>
 
                 <ListItem>
-                    <ListText fontFamily='PlayFair Display'>No 3 - My girlfriend and I adopted a koi plakat siamese fighting fish</ListText>
-                    <ListText fontFamily='Lato'>He is known as Char, the Red Comet</ListText>
+                    <ListText fontFamily='PlayFair Display'>I was a multimedia designer at MAL Reclame in 2014</ListText>
+                    <ListText fontFamily='Lato'>Taken on as a short term hire I was tasked to set up online and offline advertisements for existing and newly contracted clients. At this agency I had the pleasure of working on projects for Bang & Olufsen and Van Mossel Automotive.</ListText>
                 </ListItem>
 
                 <ListItem>
-                    <ListText fontFamily='PlayFair Display'>No 4 - I try to travel to a new place once a year</ListText>
+                    <ListText fontFamily='PlayFair Display'>I wrote my thesis at Insiders in 2013</ListText>
+                    <ListText fontFamily='Lato'>My partner and I researched and developed a concept to help brands explore the world of online video and how to effectively use it. During my thesis I contributed existing projects as a photographer and videographer in the field of tourism.</ListText>
                 </ListItem>
 
                 <ListItem>
