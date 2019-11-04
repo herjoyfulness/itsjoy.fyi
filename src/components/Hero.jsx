@@ -1,18 +1,14 @@
 import React from 'react';
-import styled from 'styled-components';
 
-import {Hello} from './shared/Typography';
+import {Flex} from './shared/containers'
+import {H1} from './shared/typography';
 
-const HelloText = styled.div `
-    margin: auto;
-    width: 800px;
-`
 
-function Hero() {
+const Hero = () => {
     return (
-        <HelloText>
-            <Hello>Hello, my name is Joy. People say I have a knack for design, code and photography.</Hello>
-        </HelloText>
+        <Flex width='800px' margin='150px auto 0 auto'>
+            <H1>Hello, my name is Joy. People say I have a knack for design, code and photography.</H1>
+        </Flex>
     )
 }
 

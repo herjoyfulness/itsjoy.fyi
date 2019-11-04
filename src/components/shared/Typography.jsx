@@ -1,8 +1,16 @@
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
-import {color, fontFamily, fontSize, alignItems, textAlign} from 'styled-system';
+import {
+    color,
+    width,
+    fontFamily,
+    fontSize,
+    fontWeight,
+    textAlign,
+    margin
+} from 'styled-system';
 
-const Hello = styled.h1 `
+const H1 = styled.h1 `
     font-family: Playfair Display;
     font-style: normal;
     font-weight: normal;
@@ -10,89 +18,110 @@ const Hello = styled.h1 `
     line-height: 36px;
     text-align: justify;
     color: #FFF;  
-`;
+`
 
-const LinkStyle = styled(Link) `
+const H2 = styled.h2 `
+    ${fontFamily}
+    ${fontWeight}
+    ${fontSize}
+    ${color}
+    font-style: normal;
+    line-height: 24px;
+`
+
+const H3 = styled.h3 `
+    ${color};
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+`
+
+const P = styled.p `
+    ${fontFamily};
+    ${color};
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    margin: 4px 0;
+`
+
+const A = styled(Link) `
+    ${color}
+    ${width}
     position: relative;
     font-family: Lato;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 18px;
     line-height: 18px;
     text-align: center;
-    letter-spacing: -0.015em;
-    color: #FFF;
     padding: 8px;
-    border: 2px solid #fff;
+    border: 2px dashed #fff;
     text-decoration: none;
-
     :hover {
         color: #000;
         background-color: #FFF;         
     }
 `
 
-const Title = styled.h2 `
-    font-family: Lato;
-    font-style: normal;
-    font-weight: bold;
-    ${fontSize}
-    line-height: 24px;
-    display: flex;
-    align-items: flex-end;
-    letter-spacing: -0.015em;
-    ${color};
-`
-const Summary = styled.h2 `
-    font-family: Playfair Display;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: justify;
-    ${color};
-`
-
-const Description = styled.h3 `
-    font-family: Playfair Display;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    ${color};
-`
-
-const Paragraph = styled.p `
-    font-family: Lato;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 16px;
-    display: flex;
-    align-items: flex-end;
-    letter-spacing: -0.015em;
-    ${color};
-`
-
 const List = styled.ul `
+    ${textAlign}
+    ${margin}
     display: flex;
     flex-direction: column;
-    ${textAlign}
+    justify-content: space-between;
     list-style: none;
-    margin: 0;
-    padding: 16px 0;
+    padding: 0px;
+    li {
+        margin: 8px 0px;
+    };
+    
 `
 
-const ListItem = styled.li `
-    margin-bottom: 0px;
+const SkillList = styled.ul `
+    ${margin}
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    li{
+        display: inline-block;
+        font-family: Lato;
+        font-size: 16px;
+        line-height: 24px;
+        color: #F48264;
+        border: 2px dashed #F48264;
+        background-color: #fff;
+        padding: 4px 4px;
+        margin: 8px 16px 8px 0;
+    }
 `
 
-const ListText = styled.p `
-    ${fontFamily};
+const Break = styled.hr `
+    width: 40px;
+    height: 2px;
+    ${color}
+    ${margin}
+`
+
+const Button = styled(Link) `
+    width: 130px;
+    padding: 8px;
+    font-family: Lato;
     font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 16px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFF;
+    border: 2px solid #fff;
+    text-decoration: none;
+    :hover {
+        color: #000;
+        background-color: #FFF;         
+    }
 `
 
 // const AboutLink = styled.a `
@@ -110,14 +139,14 @@ const ListText = styled.p `
 // `
 
 export {
-    LinkStyle,
-    Hello,
-    Title,
-    Summary,
-    Description,
-    Paragraph,
+    A,
+    H1,
+    H2,
+    H3,
+    P,
     List,
-    ListItem,
-    ListText,
+    SkillList,
+    Break,
+    Button
     // AboutLink,
 }

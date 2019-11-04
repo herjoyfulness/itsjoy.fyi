@@ -1,39 +1,75 @@
 import React from 'react';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-// import styled from 'styled-components';
-import { ThemeProvider } from 'styled-components';
+import {
+    Switch,
+    Route
+} from 'react-router-dom'
 
-import Navigation from '../components/shared/Navigation';
-import Hero from '../components/Hero';
-import {Background, Container, Flex, Box, HeroWrap} from '../components/shared/containers';
-import About from './About';
-import Resume from './Resume';
-import { theme } from '../components/shared/theme'
+import Navigation from '../components/shared/navigation';
+import Hero from '../components/hero';
+import {
+    Background,
+    Flex,
+    Box,
+} from '../components/shared/containers';
+import About from './about';
+import Resume from './resume';
+import {ABC, DEF} from './projects'
+import { 
+    ProjectOne,
+    ProjectTwo,
+    ProjectThree,
+    ProjectFour 
+} from '../components/projectsHome'
+import displayOne from '../asset/project1.png'
+import displayTwo from '../asset/project2.jpg'
+import displayThree from '../asset/project3.jpg'
+import displayFour from '../asset/project4.jpg'
 
-const App = () => {
+const Home = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <Router>
-        <Background>
-          <Flex width='100%' height='500px' justifyContent='space-between' flexDirection='column' alignItems='center'>
-            <Navigation />
+    <Switch>
+      <Route>
+        <Background position='fixed' zIndex='-1' top='0'/>
+        <Box>
+
+          <Navigation/>
+
+          <Flex width='100%' height='54.8vh'>
             <Hero />
           </Flex>
-        </Background>
-        <Switch>
-          <Route>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/resume">
-              <Resume />
-            </Route>
+
+          <Flex height='50vh' background='#444' zIndex='999' margin='auto' bg={displayOne}>
+            <ProjectOne />
+            
+          </Flex>
+          <Flex height='50vh' background='#333' zIndex='999' margin='auto' bg={displayTwo}>
+            <ProjectTwo />
+          </Flex>
+
+          <Flex height='50vh' background='#444' zIndex='999' margin='auto' bg={displayThree}>
+            <ProjectThree />
+          </Flex>
+          <Flex height='50vh' background='#333' zIndex='999' margin='auto' bg={displayFour}>
+            <ProjectFour />
+          </Flex>
+
+          <Route path="/resume">
+            <Resume />
           </Route>
-        </Switch>
-      </Router>
-      
-    </ThemeProvider>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/abc">
+            <ABC />
+          </Route>
+          <Route path="/def">
+            <DEF />
+          </Route>
+
+        </Box>
+      </Route>
+    </Switch>
   );
 }
 
-export default App;
+export default Home;
