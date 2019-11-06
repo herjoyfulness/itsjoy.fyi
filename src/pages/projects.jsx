@@ -6,12 +6,12 @@ import {
     Box, 
     ProjectContainer, 
     Image
-} from '../components/shared/containers';
+} from '../components/shared/Containers';
 import {
+    H1,
     H2, 
     H3,
     P,
-    A,
 } from '../components/shared/Typography';
 import PhotoMe from '../asset/PhotoMe.png';
 import Close from '../asset/Close.svg'
@@ -22,8 +22,8 @@ const ABC = () => {
             <Box margin='auto' padding='76px 116px' width='1024px'>
 
                 <Flex justifyContent='space-between' alignItems='center'>
-                    <H2 fontFamily='Lato' fontSize='18px' color='#000'>Alexandra Bradley Consulting</H2>
-                    <A to="/"><Image width='20px' src={Close} /></A>
+                    <H1 fontFamily='Lato' color='#000'>Alexandra Bradley Consulting</H1>
+                    <Link to="/"><Image width='20px' src={Close} /></Link>
                 </Flex>
 
                 <H3 color='#000'>Curl up and sleep on the freshly laundered towels massacre a bird in the living room and then look like the cutest and most innocent animal on the planet yet woops poop hanging from butt must get rid run run around house drag poop on floor maybe it comes off woops left brown marks on floor human slave clean lick butt now and i shredded your linens for you attack feet carefully drink from water glass and then spill it everywhere and proceed to lick the puddle. </H3>

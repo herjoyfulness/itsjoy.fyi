@@ -5,11 +5,12 @@ import {
     Flex,
     ModalContainer,
     Image
-} from '../components/shared/containers';
+} from '../components/shared/Containers';
 import {
     H2,
     H3,
     P,
+    A,
     List,
     SkillList
 } from '../components/shared/Typography';
@@ -27,22 +28,23 @@ const Resume = () => {
             <H3 color='#000'>My approach to life and work is influenced by a quote from Douglas Adams’ Life, the Universe and Everything Else: “It is a mistake to think you can solve any major problems just with potatoes.”. I’m a fan of clean and simple design with high attention to detail. My passions range from cooking dishes which people rave about to their colleagues, to the falling leaves during autumn, but lie mainly in technology.</H3>
 
             <Flex justifyContent='space-between'>
-                <SkillList>
-                    <h3>Development</h3>
+                <SkillList flexDirection='column'>
+                    <h3>I write</h3>
                     <li>JavaScript</li>
                     <li>React.js</li>
+                    <li>HTML & CSS</li>
+                    
                 </SkillList>
-                <SkillList>
-                    <h3>Design</h3>
-                    <li>UI Design</li>
-                    <li>UX Design</li>
-                    <li>Photography</li>
-                    <li>Branding</li>
+                <SkillList flexDirection='column'>
+                    <h3>I create</h3>
+                    <li>Web design</li>
+                    <li>UI & UX</li>
+                    <li>Logo & branding</li>
                 </SkillList>
-                <SkillList>
-                    <h3>Tools</h3>
+                <SkillList flexDirection='column'>
+                    <h3>I use</h3>
                     <li>Github</li>
-                    <li>Figma / Sketch</li>
+                    <li>Figma & Sketch</li>
                     <li>Adobe Creative Suite</li>
                 </SkillList>
             </Flex>
@@ -57,9 +59,18 @@ const Resume = () => {
                     <P fontFamily='PlayFair Display'>I was a professional cat cuddler at Dierenopvang Breda in 2019</P>
                 </li>
 
+                {/* <li>
+                    <P fontFamily='PlayFair Display'>I was a postoffice employee at PostNL from 2016 until 2018</P>
+                </li> */}
+
                 <li>
                     <P fontFamily='PlayFair Display'>I was a multimedia designer at MAL Reclame in 2014</P>
                     <P fontFamily='Lato'>Taken on as a short term hire I was tasked to set up online and offline advertisements for existing and newly contracted clients. At this agency I had the pleasure of working on projects for Bang & Olufsen and Van Mossel Automotive.</P>
+                </li>
+
+                <li>
+                    <P fontFamily='Playfair Display'>I am a BSc in Communication & Multimedia Design and graduated from Avans University of Applied Sciences in 2014</P>
+                    <P fontFamily='Lato'>During my bachelor's I majored in Multimedial Design and minored in Visualizing Information. At university I had the pleasure of working on real projects for companies such as Philips, Cinekid and SpinAwards.</P>
                 </li>
 
                 <li>
@@ -74,14 +85,35 @@ const Resume = () => {
 
             </List>
 
-            <SkillList flexWrap='wrap' mt='16px' justifyContent='flex-start'>
-                <li>Creative</li>
-                <li>Goal Driven</li>
-                <li>Helpful</li>
-                <li>Passionate</li>
-                <li>Perfectionist</li>
-                <li>Self-motivated</li>
-                <li>Teamplayer</li>
+            <Flex justifyContent='space-between'>
+                <SkillList flexDirection='column'>
+                    <h3>I am</h3>
+                    <li>Creative</li>
+                    <li>Goal Driven</li>
+                    <li>Passionate</li>
+                    <li>Perfectionist</li>
+                    <li>Self-motivated</li>
+                </SkillList>
+                <SkillList flexDirection='column'>
+                    <h3>I like</h3>
+                    <li>Autumn & winter</li>
+                    <li>Coffee</li>
+                    <li>Drawing</li>
+                    <li>The sea</li>
+                    <li>Skateboarding</li>
+                </SkillList>
+                <SkillList flexDirection='column'>
+                    <h3>I love</h3>
+                    <li>Cooking</li>
+                    <li>Photography</li>
+                    <li>Star Wars</li>
+                    <li>Traveling</li>
+                    <li>My wife-to-be</li>
+                </SkillList>
+            </Flex>
+
+            <SkillList flexWrap='wrap' mt='16px'>
+
             </SkillList>
 
         </ModalContainer>

@@ -98,6 +98,9 @@ const ModalContainer = styled.div `
     ::-webkit-scrollbar {
         display: none;
     }
+    -webkit-box-shadow: 0px 0px 24px -48px rgba(0,0,0,.4);
+    -moz-box-shadow: 0px 0px 24px -48px rgba(0,0,0,.4);
+    box-shadow: 0px 0px 24px -48px rgba(0,0,0,.4);
 `
 
 const ProjectContainer = styled.div`

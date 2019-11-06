@@ -5,7 +5,7 @@ import {
 import { ThemeProvider } from 'styled-components';
 
 import Home from './pages/Home'
-import { theme } from './components/shared/theme'
+import { theme } from './components/shared/Theme'
 
 const App = () => {
     return (

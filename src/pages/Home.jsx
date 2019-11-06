@@ -10,16 +10,16 @@ import {
     Background,
     Flex,
     Box,
-} from '../components/shared/containers';
+} from '../components/shared/Containers';
 import About from './About';
 import Resume from './Resume';
-import {ABC, DEF} from './projects'
+import {ABC, DEF} from './Projects'
 import { 
     ProjectOne,
     ProjectTwo,
     ProjectThree,
     ProjectFour 
-} from '../components/projectsHome'
+} from '../components/ProjectsHome'
 import displayOne from '../asset/project1.png'
 import displayTwo from '../asset/project2.jpg'
 import displayThree from '../asset/project3.jpg'

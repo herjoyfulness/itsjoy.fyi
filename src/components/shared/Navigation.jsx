@@ -4,16 +4,16 @@ import {Link} from 'react-router-dom';
 import {
     Flex, 
     Image
-} from './containers';
-import { A } from './Typography';
+} from './Containers';
+import { Button } from './Typography';
 import Logo from '../../asset/logo.svg';
 
 const Navigation = () => {
     return (
         <Flex width='1024px' height='100px' justifyContent='space-between' alignItems='center' margin='auto' mt='500px' position='sticky' top='20px' zIndex='2'>
-            <A to ="/resume" color='#FFF' >Resume</A>
+            <Button to ="/resume" color='#FFF' border='2px dashed #fff' >Resume</Button>
             <Link to ="/"><Image  width='100px' src={Logo} alt="Logo"/></Link>
-            <A to ="/about" color='#FFF' >About</A>
+            <Button to ="/about" color='#FFF' border='2px dashed #fff' >About</Button>
         </Flex>
     )
 }
