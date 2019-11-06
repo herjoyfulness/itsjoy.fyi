@@ -5,7 +5,8 @@ import {
     Flex,
     Box, 
     ProjectContainer, 
-    Image
+    Image,
+    Display
 } from '../components/shared/Containers';
 import {
     H1,
@@ -15,19 +16,28 @@ import {
 } from '../components/shared/Typography';
 import PhotoMe from '../asset/PhotoMe.png';
 import Close from '../asset/Close.svg'
+import ABCHomeL from '../asset/abc/abc_home_desktop.png'
+import ABCHomeM from '../asset/abc/abc_home_tablet.png'
+import ABCHomeS from '../asset/abc/abc_home_mobile.png'
 
 const ABC = () => {
     return (
         <ProjectContainer>
-            <Box margin='auto' padding='76px 116px' width='1024px'>
+            <Box margin='auto' padding='76px 0' width='1024px'>
 
                 <Flex justifyContent='space-between' alignItems='center'>
                     <H1 fontFamily='Lato' color='#000'>Alexandra Bradley Consulting</H1>
                     <Link to="/"><Image width='20px' src={Close} /></Link>
                 </Flex>
 
-                <H3 color='#000'>Curl up and sleep on the freshly laundered towels massacre a bird in the living room and then look like the cutest and most innocent animal on the planet yet woops poop hanging from butt must get rid run run around house drag poop on floor maybe it comes off woops left brown marks on floor human slave clean lick butt now and i shredded your linens for you attack feet carefully drink from water glass and then spill it everywhere and proceed to lick the puddle. </H3>
-                <P fontFamily='Lato'>Eat a plant, kill a hand eat prawns daintily with a claw then lick paws clean wash down prawns with a lap of carnation milk then retire to the warmest spot on the couch to claw at the fabric before taking a catnap, adventure always dead stare with ears cocked prance along on top of the garden fence, annoy the neighbor's dog and make it bark. Hit you unexpectedly cat fur is the new black . Crusty butthole cats are cute jump around on couch, meow constantly until given food, morning beauty routine of licking self. Meoooow chase ball of string yet stare out cat door then go back inside hell is other people. Somehow manage to catch a bird but have no idea what to do next, so play with it until it dies of shock what a cat-ass-trophy!. I is not fat, i is fluffy mouse and hate dog, but stand in front of the computer screen, but being gorgeous with belly side up lick plastic bags. Chew master's slippers inspect anything brought into the house, and attempt to leap between furniture but woefully miscalibrate and bellyflop onto the floor; what's your problem? i meant to do that now i shall wash myself intently yet paw your face to wake you up in the morning, spill litter box, scratch at owner, destroy all furniture, especially couch eat the fat cats food curl up and sleep on the freshly laundered towels. Hate dog why must they do that swat at dog. Dismember a mouse and then regurgitate parts of it on the family room floor meow for food, then when human fills food dish, take a few bites of food and continue meowing but meow to be let out poop on couch and do i like standing on litter cuz i sits when i have spaces, my cat buddies have no litter i live in luxury cat life but i see a bird i stare at it i meow at it i do a wiggle come here birdy. Meow meow, i tell my human 𝕄𝔼𝕆𝕎 for spread kitty litter all over house so cough hairball, eat toilet paper yet meow and walk away. 𝕄𝔼𝕆𝕎. Eats owners hair then claws head loves cheeseburgers. The cat was chasing the mouse hide when guests come over throw down all the stuff in the kitchen shove bum in owner's face like camera lens sleep everywhere, but not in my bed. Hiss at vacuum cleaner scamper meow all night having their mate disturbing sleeping humans. Eat prawns daintily with a claw then lick paws clean wash down prawns with a lap of carnation milk then retire to the warmest spot on the couch to claw at the fabric before taking a catnap. Have my breakfast spaghetti yarn while happily ignoring when being called make meme, make cute face hide at bottom of staircase to trip human. Loves cheeseburgers good morning sunshine.</P>
+                <Display width='1024px' src={ABCHomeL} />
+
+                <H3 color='#000'>Alexandra Bradley is an Early Years Education specalist based in London with a decade of experience teaching in some of the most prestigious educational establishments in the Central London area. Known for her honest and supportive mentoring role to parents and with her ethos of "happiness, safety and wellbeing of the child is paramount" she is perfectly placed to guide and help you navigate your child's early years.</H3>
+                <P fontFamily='Lato' margin='16px 0'>To enhance the digital presence for her brand, Alexandra Bradley Consulting, she requested a simple and accessible website.</P>
+                <P fontFamily='Lato' margin='16px 0'>This is where I insert more properly written copy.</P>
+
+                <Display width='768px' src={ABCHomeM} />
+                <Display width='320px' src={ABCHomeS} />
 
             </Box>
 

@@ -47,7 +47,7 @@ const About = () => {
                 </li>
 
                 <li>
-                    <P fontFamily='PlayFair Display'>IV - I am obsessed with <A href='https://www.youtube.com/watch?v=rdZxHfUNmvY'>Japanese mecha</A></P>
+                    <P fontFamily='PlayFair Display'>IV - I am obsessed with <A href='https://youtu.be/rdZxHfUNmvY?t=48s'>Japanese mecha</A></P>
                 </li>
 
                 <li>

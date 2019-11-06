@@ -17,7 +17,8 @@ import {
     top,
     bottom,
     background,
-    zIndex
+    zIndex,
+    boxShadow
 } from 'styled-system'
 // import {
 //     disableBodyScroll, 
@@ -110,11 +111,22 @@ const ProjectContainer = styled.div`
     height: 100vh;
     background-color: #FFF;
     z-index: 3;
+    overflow-y: auto;
 `
 
 const Image = styled.img `
     ${width}
+    ${boxShadow}
     z-index: 2;
+`
+
+const Display = styled.img `
+    ${width}
+    margin: 40px auto;
+    z-index: 2;
+    -webkit-box-shadow: 0px 0px 48px 0px rgba(0,0,0,.08);
+    -moz-box-shadow: 0px 0px 48px 0px rgba(0,0,0,.08);
+    box-shadow: 0px 0px 48px 0px rgba(0,0,0,.08);
 `
 
 
@@ -125,5 +137,6 @@ export {
     Box,
     ModalContainer,
     ProjectContainer,
-    Image
+    Image,
+    Display
 }

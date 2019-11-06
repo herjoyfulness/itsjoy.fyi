@@ -14,44 +14,43 @@ import {
 } from 'styled-system';
 
 const H1 = styled.h1 `
-    ${fontFamily}
-    ${color}
-    ${fontWeight}    
     font-size: 27px;
     line-height: 36px;
     text-align: justify;
+    ${fontFamily}
+    ${color}
+    ${fontWeight}   
 `
 
 const H2 = styled.h2 `
+    font-style: normal;
+    line-height: 24px;
     ${fontFamily}
     ${fontWeight}
     ${fontSize}
     ${color}
-    font-style: normal;
-    line-height: 24px;
 `
 
 const H3 = styled.h3 `
-    ${color};
-    ${textAlign}
     font-family: Playfair Display;
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
+    ${color};
+    ${textAlign}
 `
 
 const P = styled.p `
-    ${fontFamily};
-    ${color};
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
     margin: 4px 0;
+    ${fontFamily};
+    ${color};
+    ${margin}
 `
 
 const A = styled.a `
-    ${fontFamily}
-    ${margin}
     color: #000;
     font-weight: 300;
     font-size: 16px;
@@ -63,11 +62,11 @@ const A = styled.a `
         font-weight: 300;
         color: #F48264;
     }
+    ${fontFamily}
+    ${margin}
 `
 
 const List = styled.ul `
-    ${textAlign}
-    ${margin}
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -76,14 +75,11 @@ const List = styled.ul `
     li {
         margin: 8px 0px;
     };
-    
+    ${textAlign}
+    ${margin}    
 `
 
 const SkillList = styled.ul `
-    ${margin}
-    ${color}
-    ${flexWrap}
-    ${flexDirection}
     width: 33%;
     display: flex;
     list-style: none;
@@ -104,6 +100,10 @@ const SkillList = styled.ul `
         line-height: 24px;
         margin: 8px 16px 8px 0;        
     }
+    ${margin}
+    ${color}
+    ${flexWrap}
+    ${flexDirection}
 `
 
 // const SkillList = styled.ul `
