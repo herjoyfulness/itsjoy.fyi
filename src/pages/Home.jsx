@@ -4,15 +4,15 @@ import {
     Route
 } from 'react-router-dom'
 
-import Navigation from '../components/shared/navigation';
-import Hero from '../components/hero';
+import Navigation from '../components/shared/Navigation';
+import Hero from '../components/Hero';
 import {
     Background,
     Flex,
     Box,
 } from '../components/shared/containers';
-import About from './about';
-import Resume from './resume';
+import About from './About';
+import Resume from './Resume';
 import {ABC, DEF} from './projects'
 import { 
     ProjectOne,

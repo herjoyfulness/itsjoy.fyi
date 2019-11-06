@@ -12,7 +12,7 @@ import {
     P,
     List,
     SkillList
-} from '../components/shared/typography';
+} from '../components/shared/Typography';
 import Close from '../asset/Close.svg'
 
 const Resume = () => {

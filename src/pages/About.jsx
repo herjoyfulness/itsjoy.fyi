@@ -12,7 +12,7 @@ import {
     P,
     A,
     List
-} from '../components/shared/typography';
+} from '../components/shared/Typography';
 import PhotoMe from '../asset/PhotoMe.png';
 import Close from '../asset/Close.svg'
 

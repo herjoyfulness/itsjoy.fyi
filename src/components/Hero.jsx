@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {Flex} from './shared/containers'
-import {H1} from './shared/typography';
+import {H1} from './shared/Typography';
 
 
 const Hero = () => {

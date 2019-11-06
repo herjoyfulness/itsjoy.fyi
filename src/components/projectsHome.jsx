@@ -7,7 +7,7 @@ import {
     H2, 
     Break, 
     Button
-} from './shared/typography'
+} from './shared/Typography'
 
 
 

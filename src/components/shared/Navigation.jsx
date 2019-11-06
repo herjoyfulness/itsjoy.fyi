@@ -5,7 +5,7 @@ import {
     Flex, 
     Image
 } from './containers';
-import { A } from './typography';
+import { A } from './Typography';
 import Logo from '../../asset/logo.svg';
 
 const Navigation = () => {
