@@ -26,17 +26,26 @@ const Resume = () => {
             
             <H3 color='#000'>My approach to life and work is influenced by a quote from Douglas Adams’ Life, the Universe and Everything Else: “It is a mistake to think you can solve any major problems just with potatoes.”. I’m a fan of clean and simple design with high attention to detail. My passions range from cooking dishes which people rave about to their colleagues, to the falling leaves during autumn, but lie mainly in technology.</H3>
 
-            <SkillList flexWrap='wrap' mt='16px' justifyContent='flex-start'>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Github</li>
-                <li>Figma / Sketch</li>
-                <li>UI Design</li>
-                <li>UX Design</li>
-                <li>Adobe Creative Suite</li>
-                <li>Photography</li>
-                <li>Branding</li>
-            </SkillList>
+            <Flex justifyContent='space-between'>
+                <SkillList>
+                    <h3>Development</h3>
+                    <li>JavaScript</li>
+                    <li>React.js</li>
+                </SkillList>
+                <SkillList>
+                    <h3>Design</h3>
+                    <li>UI Design</li>
+                    <li>UX Design</li>
+                    <li>Photography</li>
+                    <li>Branding</li>
+                </SkillList>
+                <SkillList>
+                    <h3>Tools</h3>
+                    <li>Github</li>
+                    <li>Figma / Sketch</li>
+                    <li>Adobe Creative Suite</li>
+                </SkillList>
+            </Flex>
             
             <List textAlign='justify'>
                 <li>

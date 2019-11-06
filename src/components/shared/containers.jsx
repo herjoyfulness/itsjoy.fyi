@@ -19,6 +19,11 @@ import {
     background,
     zIndex
 } from 'styled-system'
+// import {
+//     disableBodyScroll, 
+//     enableBodyScroll, 
+//     clearAllBodyScrollLocks
+// } from 'body-scroll-lock';
 
 import BackgroundImg from '../../asset/4.jpg';
 
@@ -83,7 +88,7 @@ const ModalContainer = styled.div `
     ${right}
     top: 0;
     position: fixed;
-    width: 45vw;
+    width: 768px;
     height: 100vh;
     z-index: 2;
     background-color: #FFF;
