@@ -16,7 +16,7 @@ const ProjectOne = () => {
         <Flex width='1024px' margin='auto' justifyContent='flex-start' >
             
             <Flex flexDirection='column' height='200px' width='400px' justifyContent='space-between' >
-                <H2 fontFamily='Lato' color='#FFF'>Project Title</H2>
+                <H2 fontFamily='Lato' color='#FFF'>Alexandra Bradley Consulting</H2>
                 <Break color='#FFF' ml='0'/>
                 <H2 fontFamily='Playfair Display' fontWeight='300' fontSize='20px' color='#FFF'>Project Details</H2>
                 <Button to ="/abc">Project details</Button>

@@ -82,22 +82,49 @@ const List = styled.ul `
 
 const SkillList = styled.ul `
     ${margin}
+    ${color}
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
+    flex-direction: column;
     list-style: none;
     padding: 0;
     li{
         display: inline-block;
         font-family: Lato;
+        font-weight: 600;
         font-size: 16px;
         line-height: 24px;
-        color: #F48264;
-        border: 2px dashed #F48264;
-        background-color: #fff;
         padding: 4px 4px;
         margin: 8px 16px 8px 0;
     }
+    h3{
+        font-family: Lato;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 4px 4px;
+        margin: 8px 16px 8px 0;        
+    }
 `
+
+// const SkillList = styled.ul `
+//     ${margin}
+//     display: flex;
+//     flex-wrap: wrap;
+//     list-style: none;
+//     padding: 0;
+//     li{
+//         display: inline-block;
+//         font-family: Lato;
+//         font-size: 16px;
+//         line-height: 24px;
+//         color: #F48264;
+//         border: 2px dashed #F48264;
+//         background-color: #fff;
+//         padding: 4px 4px;
+//         margin: 8px 16px 8px 0;
+//     }
+// `
 
 const Break = styled.hr `
     width: 40px;
