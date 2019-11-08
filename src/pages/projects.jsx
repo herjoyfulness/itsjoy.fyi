@@ -1,47 +1,56 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import {
     Flex,
-    Box, 
-    ProjectContainer, 
+    Box,
+    ProjectContainer,
     Image,
     Display
-} from '../components/shared/Containers';
+} from '../components/shared/containers';
 import {
     H1,
-    H2, 
+    H2,
     H3,
     P,
+    List,
+    A
 } from '../components/shared/Typography';
 import PhotoMe from '../asset/PhotoMe.png';
 import Close from '../asset/Close.svg'
-import ABCHomeL from '../asset/abc/abc_home_desktop.png'
-import ABCHomeM from '../asset/abc/abc_home_tablet.png'
-import ABCHomeS from '../asset/abc/abc_home_mobile.png'
+import ABCHead from '../asset/abc/abc_header.png'
+
 
 const ABC = () => {
     return (
         <ProjectContainer>
-            <Box margin='auto' padding='76px 0' width='1024px'>
+            <Flex margin='auto' padding='76px 0' width='1200px' flexDirection='column' alignItems='center'>
 
-                <Flex justifyContent='space-between' alignItems='center'>
+                <Flex width='48em' justifyContent='space-between' alignItems='center'>
                     <H1 fontFamily='Lato' color='#000'>Alexandra Bradley Consulting</H1>
                     <Link to="/"><Image width='20px' src={Close} /></Link>
                 </Flex>
 
-                <Display width='1024px' src={ABCHomeL} />
+                <Display width='1200px' src={ABCHead} />
 
-                <H3 color='#000'>Alexandra Bradley is an Early Years Education specalist based in London with a decade of experience teaching in some of the most prestigious educational establishments in the Central London area. Known for her honest and supportive mentoring role to parents and with her ethos of "happiness, safety and wellbeing of the child is paramount" she is perfectly placed to guide and help you navigate your child's early years.</H3>
-                <P fontFamily='Lato' margin='16px 0'>To enhance the digital presence for her brand, Alexandra Bradley Consulting, she requested a simple and accessible website.</P>
-                <P fontFamily='Lato' margin='16px 0'>This is where I insert more properly written copy.</P>
+                <Box width='48em'>
+                    <H3 color='#000'>Alexandra Bradley is an Early Years Education specalist based in London with a decade of experience teaching in some of the most prestigious educational establishments in the Central London area. Known for her honest and supportive mentoring role to parents and with her ethos of "happiness, safety and wellbeing of the child is paramount" she is perfectly placed to guide and help you navigate your child's early years.</H3>
+                    <P fontFamily='Lato' margin='16px 0'>To enhance the digital presence for her brand, <A>Alexandra Bradley Consulting</A>, she requested a simple and accessible website.</P>
+                    <P fontFamily='Lato' margin='16px 0'>This is where I insert more properly written copy.</P>
+                </Box>
 
-                <Display width='768px' src={ABCHomeM} />
-                <Display width='320px' src={ABCHomeS} />
+                <Flex flexDirection='column'>
+                    <List>
+                        <h3>Tools</h3>
+                        <li>HTML & CSS</li>
+                        <li>JavaScript</li>
+                        <li>Figma</li>
+                        <li>Github</li>
+                    </List>
+                </Flex>
+            </Flex>
 
-            </Box>
-
-        </ProjectContainer>
+        </ProjectContainer >
     )
 }
 
@@ -64,4 +73,4 @@ const DEF = () => {
     )
 }
 
-export {ABC, DEF}
+export { ABC, DEF }

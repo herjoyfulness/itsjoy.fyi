@@ -1,7 +1,8 @@
 import styled from 'styled-components';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import {
     color,
+    background,
     width,
     fontFamily,
     fontSize,
@@ -13,7 +14,7 @@ import {
     border
 } from 'styled-system';
 
-const H1 = styled.h1 `
+const H1 = styled.h1`
     font-size: 27px;
     line-height: 36px;
     text-align: justify;
@@ -22,25 +23,26 @@ const H1 = styled.h1 `
     ${fontWeight}   
 `
 
-const H2 = styled.h2 `
-    font-style: normal;
+const H2 = styled.h2`
     line-height: 24px;
+    text-align: justify;
     ${fontFamily}
     ${fontWeight}
     ${fontSize}
     ${color}
 `
 
-const H3 = styled.h3 `
+const H3 = styled.h3`
     font-family: Playfair Display;
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
+    text-align: justify;
     ${color};
     ${textAlign}
 `
 
-const P = styled.p `
+const P = styled.p`
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -50,7 +52,7 @@ const P = styled.p `
     ${margin}
 `
 
-const A = styled.a `
+const A = styled.a`
     color: #000;
     font-weight: 300;
     font-size: 16px;
@@ -66,7 +68,7 @@ const A = styled.a `
     ${margin}
 `
 
-const List = styled.ul `
+const FactList = styled.ul`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -79,9 +81,10 @@ const List = styled.ul `
     ${margin}    
 `
 
-const SkillList = styled.ul `
-    width: 33%;
+const List = styled.ul`
+    ${width};
     display: flex;
+    flex-direction: column;
     list-style: none;
     padding: 0;
     li{
@@ -125,7 +128,7 @@ const SkillList = styled.ul `
 //     }
 // `
 
-const Break = styled.hr `
+const Break = styled.hr`
     width: 40px;
     height: 2px;
     ${color}
@@ -133,10 +136,11 @@ const Break = styled.hr `
 `
 
 
-const Button = styled(Link) `
+const Button = styled(Link)`
     ${color}
     ${width}
     ${border}
+    ${background}
     position: relative;
     font-family: Lato;
     font-style: normal;
@@ -172,8 +176,8 @@ export {
     H3,
     P,
     A,
+    FactList,
     List,
-    SkillList,
     Break,
     Button
     // AboutLink,

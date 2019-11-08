@@ -17,18 +17,15 @@ import {
     top,
     bottom,
     background,
+    backgroundPosition,
+    backgroundSize,
     zIndex,
     boxShadow
 } from 'styled-system'
-// import {
-//     disableBodyScroll, 
-//     enableBodyScroll, 
-//     clearAllBodyScrollLocks
-// } from 'body-scroll-lock';
 
 import BackgroundImg from '../../asset/4.jpg';
 
-const Background = styled.div `
+const Background = styled.div`
     display: flex;
     align-items: center;
     width: 100vw;
@@ -37,7 +34,7 @@ const Background = styled.div `
     background-image: url(${BackgroundImg});
     background-size: cover;
     ${zIndex};
-` 
+`
 
 const Container = styled.div`
     max-width: 1260px;
@@ -55,12 +52,15 @@ const Flex = styled.div`
     ${maxWidth}
     ${height};
     ${margin};
+    ${padding};
     ${position};
     ${top};
     ${left};
-    ${background}; 
+    ${background};
+    ${backgroundPosition};
+    ${backgroundSize};
     background-image: url(${props => props.bg});
-    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     box-sizing: border-box;
 `
@@ -84,7 +84,7 @@ const Box = styled.div`
     box-sizing: border-box;
 `
 
-const ModalContainer = styled.div `
+const ModalContainer = styled.div`
     ${left}
     ${right}
     top: 0;
@@ -114,19 +114,20 @@ const ProjectContainer = styled.div`
     overflow-y: auto;
 `
 
-const Image = styled.img `
+const Image = styled.img`
     ${width}
     ${boxShadow}
     z-index: 2;
 `
 
-const Display = styled.img `
+const Display = styled.img`
     ${width}
-    margin: 40px auto;
+    margin: auto;
     z-index: 2;
-    -webkit-box-shadow: 0px 0px 48px 0px rgba(0,0,0,.08);
-    -moz-box-shadow: 0px 0px 48px 0px rgba(0,0,0,.08);
-    box-shadow: 0px 0px 48px 0px rgba(0,0,0,.08);
+`
+
+const Snap = styled(Box)`
+    scroll-snap-type: y mandatory;
 `
 
 
@@ -138,5 +139,6 @@ export {
     ModalContainer,
     ProjectContainer,
     Image,
-    Display
+    Display,
+    Snap
 }

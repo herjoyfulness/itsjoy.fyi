@@ -1,18 +1,18 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 import {
-    Flex, 
-    ModalContainer, 
+    Flex,
+    ModalContainer,
     Image
-} from '../components/shared/Containers';
+} from '../components/shared/containers';
 import {
-    H2, 
+    H2,
     H3,
     P,
     A,
-    List
+    FactList
 } from '../components/shared/Typography';
 import PhotoMe from '../asset/PhotoMe.png';
 import Close from '../asset/Close.svg'
@@ -31,7 +31,7 @@ const About = () => {
             <H3 textAlign='justify' color='#000'>I'm Joy van der Veeken, a multi-disciplinary creative living in London until I get deported back from whence I came due to the United Kingdom leaving the European Union.</H3>
             <H3 textAlign='justify' color='#000'>No one likes extended summaries of one's life, so here are 10 true facts about me.</H3>
 
-            <List textAlign='center' mb='16px'>
+            <FactList textAlign='center' mb='16px'>
                 <li>
                     <P fontFamily='PlayFair Display'>I - My name appears in - every single - English dictionary</P>
                     <P fontFamily='Lato'><A href='https://dictionary.cambridge.org/dictionary/english/joy'>Joy</A> • /dʒɔɪ/ noun • a feeling of great pleasure and happiness</P>
@@ -78,7 +78,7 @@ const About = () => {
                     <P fontFamily='PlayFair Display'>X - My most played track is <A href='https://open.spotify.com/track/57q1oT76QVjLw7xnuCaAQc'>Dream Machine</A> by Dominik Eulberg</P>
                 </li>
 
-            </List>
+            </FactList>
 
             <Flex justifyContent='space-between' alignItems='center' flexDirection='column'>
                 <H3>You can stalk me on</H3>
