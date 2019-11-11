@@ -12,7 +12,7 @@ import ABCHead from '../asset/abc/abc_header.png'
 
 
 
-const ProjectOne = () => {
+const ABCSmall = () => {
     return (
         <Flex width='100vw' height='50vh' bg={ABCHead} backgroundSize='contain' background='white' backgroundPosition='right 100px center'>
             <Flex width='1024px' margin='auto' justifyContent='flex-start' >
@@ -81,7 +81,7 @@ const ProjectFour = () => {
 }
 
 export {
-    ProjectOne,
+    ABCSmall,
     ProjectTwo,
     ProjectThree,
     ProjectFour

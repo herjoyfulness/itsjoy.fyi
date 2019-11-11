@@ -87,13 +87,13 @@ const Box = styled.div`
 const ModalContainer = styled.div`
     ${left}
     ${right}
+    ${width}
     top: 0;
     position: fixed;
-    width: 768px;
     height: 100vh;
     z-index: 2;
     background-color: #FFF;
-    padding: 76px 116px;
+    ${padding}
     box-sizing: border-box;
     overflow-y: auto;
     ::-webkit-scrollbar {
@@ -117,6 +117,7 @@ const ProjectContainer = styled.div`
 const Image = styled.img`
     ${width}
     ${boxShadow}
+    ${margin}
     z-index: 2;
 `
 

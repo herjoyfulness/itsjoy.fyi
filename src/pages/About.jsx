@@ -15,11 +15,16 @@ import {
     FactList
 } from '../components/shared/Typography';
 import PhotoMe from '../asset/PhotoMe.png';
+import { theme } from '../components/shared/theme'
 import Close from '../asset/Close.svg'
+
+theme.breakpoints.s = theme.breakpoints[0];
+theme.breakpoints.m = theme.breakpoints[1];
+theme.breakpoints.l = theme.breakpoints[2];
 
 const About = () => {
     return (
-        <ModalContainer right='0' >
+        <ModalContainer right='0' width={{ default: '100%', m: '768px' }} padding={{ default: '24px', s: '48px', m: '76px 116px' }}>
 
             <Flex justifyContent='space-between' alignItems='center'>
                 <H2 fontFamily='Lato' fontSize='18px' color='#000'>About</H2>
@@ -64,8 +69,12 @@ const About = () => {
                     <P fontFamily='Lato'>Bonus points if you manage to pronounce it</P>
                 </li>
 
-                <li>
+                {/* <li>
                     <P fontFamily='PlayFair Display'>VIII - I starred in the opening movie of <A href='https://www.bbc.co.uk/sport/football/17760487'>Euro 2000</A></P>
+                </li> */}
+
+                <li>
+                    <P fontFamily='PlayFair Display'>VIII - I have a tattoo of a cat walking on a string on my ankle</P>
                 </li>
 
                 <li>

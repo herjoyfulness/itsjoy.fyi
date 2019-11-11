@@ -8,6 +8,7 @@ import {
     fontSize,
     fontWeight,
     textAlign,
+    lineHeight,
     margin,
     flexWrap,
     flexDirection,
@@ -20,7 +21,10 @@ const H1 = styled.h1`
     text-align: justify;
     ${fontFamily}
     ${color}
-    ${fontWeight}   
+    ${fontWeight}
+    ${fontSize}
+    ${lineHeight}
+
 `
 
 const H2 = styled.h2`
@@ -154,6 +158,7 @@ const Button = styled(Link)`
         color: #000;
         background-color: #FFF;         
     }
+    ${margin}
 `
 
 // const AboutLink = styled.a `

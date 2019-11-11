@@ -13,13 +13,12 @@ import {
 } from '../components/shared/containers';
 import About from './About';
 import Resume from './Resume';
-import { ABC, DEF } from './Projects'
-import {
-  ProjectOne,
-  ProjectTwo,
-  ProjectThree,
-  ProjectFour
-} from '../components/HomeProjects'
+import { ABC } from './Projects'
+import { theme } from '../components/shared/theme'
+
+theme.breakpoints.s = theme.breakpoints[0];
+theme.breakpoints.m = theme.breakpoints[1];
+theme.breakpoints.l = theme.breakpoints[2];
 
 const Home = () => {
   return (
@@ -30,23 +29,11 @@ const Home = () => {
 
           <Navigation />
 
-          <Flex width='100%'>
+          <Flex width='80%' margin='auto'>
             <Hero />
           </Flex>
 
 
-          <ProjectOne />
-
-          <ProjectTwo />
-
-
-          <Flex height='50vh' background='#444' zIndex='5' margin='auto' b>
-            <ProjectThree />
-          </Flex>
-
-          <Flex height='50vh' background='#333' zIndex='5' margin='auto' >
-            <ProjectFour />
-          </Flex>
 
           <Route path="/resume">
             <Resume />
@@ -56,9 +43,6 @@ const Home = () => {
           </Route>
           <Route path="/abc">
             <ABC />
-          </Route>
-          <Route path="/def">
-            <DEF />
           </Route>
 
         </Box>

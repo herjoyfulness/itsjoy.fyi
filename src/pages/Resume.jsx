@@ -10,15 +10,19 @@ import {
     H2,
     H3,
     P,
-    A,
     FactList,
     List
 } from '../components/shared/Typography';
+import { theme } from '../components/shared/theme'
 import Close from '../asset/Close.svg'
+
+theme.breakpoints.s = theme.breakpoints[0];
+theme.breakpoints.m = theme.breakpoints[1];
+theme.breakpoints.l = theme.breakpoints[2];
 
 const Resume = () => {
     return (
-        <ModalContainer left='0' >
+        <ModalContainer left='0' width={{ default: '100%', m: '768px' }} padding={{ default: '24px', s: '48px', m: '76px 116px' }}>
 
             <Flex justifyContent='space-between' alignItems='center'>
                 <H2 fontFamily='Lato' fontSize='18px' color='#000'>Resume</H2>
@@ -27,21 +31,21 @@ const Resume = () => {
 
             <H3 color='#000'>My approach to life and work is influenced by a quote from Douglas Adams’ Life, the Universe and Everything Else: “It is a mistake to think you can solve any major problems just with potatoes.”. I’m a fan of clean and simple design with high attention to detail. My passions range from cooking dishes which people rave about to their colleagues, to the falling leaves during autumn, but lie mainly in technology.</H3>
 
-            <Flex justifyContent='space-between'>
-                <List width='33%'>
+            <Flex justifyContent='space-between' flexDirection={{ default: 'column', s: 'row' }}>
+                <List width={{ default: '100%', m: '33%' }}>
                     <h3>I write</h3>
                     <li>JavaScript</li>
                     <li>React.js</li>
                     <li>HTML & CSS</li>
 
                 </List>
-                <List width='33%'>
+                <List width={{ default: '100%', m: '33%' }}>
                     <h3>I create</h3>
                     <li>Web design</li>
                     <li>UI & UX</li>
                     <li>Logo & branding</li>
                 </List>
-                <List width='33%'>
+                <List width={{ default: '100%', m: '33%' }}>
                     <h3>I use</h3>
                     <li>Github</li>
                     <li>Figma & Sketch</li>
@@ -85,8 +89,8 @@ const Resume = () => {
 
             </FactList>
 
-            <Flex justifyContent='space-between'>
-                <List width='33%'>
+            <Flex justifyContent='space-between' flexDirection={{ default: 'column', s: 'row' }}>
+                <List width={{ default: '100%', m: '33%' }}>
                     <h3>I am</h3>
                     <li>Creative</li>
                     <li>Goal Driven</li>
@@ -94,7 +98,7 @@ const Resume = () => {
                     <li>Perfectionist</li>
                     <li>Self-motivated</li>
                 </List>
-                <List width='33%'>
+                <List width={{ default: '100%', m: '33%' }}>
                     <h3>I like</h3>
                     <li>Autumn & winter</li>
                     <li>Coffee</li>
@@ -102,7 +106,7 @@ const Resume = () => {
                     <li>The sea</li>
                     <li>Skateboarding</li>
                 </List>
-                <List width='33%'>
+                <List width={{ default: '100%', m: '33%' }}>
                     <h3>I love</h3>
                     <li>Cooking</li>
                     <li>Photography</li>
