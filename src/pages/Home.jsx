@@ -3,7 +3,6 @@ import {
   Switch,
   Route
 } from 'react-router-dom'
-
 import Navigation from '../components/shared/Navigation';
 import Hero from '../components/Hero';
 import {
@@ -32,8 +31,6 @@ const Home = () => {
           <Flex width='80%' margin='auto'>
             <Hero />
           </Flex>
-
-
 
           <Route path="/resume">
             <Resume />

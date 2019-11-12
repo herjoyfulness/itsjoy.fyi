@@ -1,5 +1,4 @@
 import React from 'react'
-
 import {
     Flex,
 } from './shared/containers'
@@ -10,9 +9,7 @@ import {
 } from './shared/Typography'
 import ABCHead from '../asset/abc/abc_header.png'
 
-
-
-const ABCSmall = () => {
+const ABCHome = () => {
     return (
         <Flex width='100vw' height='50vh' bg={ABCHead} backgroundSize='contain' background='white' backgroundPosition='right 100px center'>
             <Flex width='1024px' margin='auto' justifyContent='flex-start' >
@@ -81,7 +78,7 @@ const ProjectFour = () => {
 }
 
 export {
-    ABCSmall,
+    ABCHome,
     ProjectTwo,
     ProjectThree,
     ProjectFour

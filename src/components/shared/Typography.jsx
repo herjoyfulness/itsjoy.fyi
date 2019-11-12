@@ -86,7 +86,6 @@ const FactList = styled.ul`
 `
 
 const List = styled.ul`
-    ${width};
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -107,30 +106,12 @@ const List = styled.ul`
         line-height: 24px;
         margin: 8px 16px 8px 0;        
     }
+    ${width};
     ${margin}
     ${color}
     ${flexWrap}
     ${flexDirection}
 `
-
-// const SkillList = styled.ul `
-//     ${margin}
-//     display: flex;
-//     flex-wrap: wrap;
-//     list-style: none;
-//     padding: 0;
-//     li{
-//         display: inline-block;
-//         font-family: Lato;
-//         font-size: 16px;
-//         line-height: 24px;
-//         color: #F48264;
-//         border: 2px dashed #F48264;
-//         background-color: #fff;
-//         padding: 4px 4px;
-//         margin: 8px 16px 8px 0;
-//     }
-// `
 
 const Break = styled.hr`
     width: 40px;
@@ -139,12 +120,7 @@ const Break = styled.hr`
     ${margin}
 `
 
-
 const Button = styled(Link)`
-    ${color}
-    ${width}
-    ${border}
-    ${background}
     position: relative;
     font-family: Lato;
     font-style: normal;
@@ -159,21 +135,11 @@ const Button = styled(Link)`
         background-color: #FFF;         
     }
     ${margin}
+    ${color}
+    ${width}
+    ${border}
+    ${background}
 `
-
-// const AboutLink = styled.a `
-
-//     ::before  {
-//         display: block;
-//         position: absolute;
-//         content: "";
-//         width: 40px;
-//         height: 4px;
-//         margin: 9px 0 0 -5px;
-//         z-index: -1;
-//         background-color: #F48264;
-//     }
-// `
 
 export {
     H1,
@@ -184,6 +150,5 @@ export {
     FactList,
     List,
     Break,
-    Button
-    // AboutLink,
+    Button,
 }

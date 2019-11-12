@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import {
 	Box,
 	Flex,
@@ -8,7 +7,6 @@ import {
 } from './containers';
 import { Button } from './Typography';
 import Logo from '../../asset/logo.svg';
-
 import { theme } from '../shared/theme'
 
 theme.breakpoints.s = theme.breakpoints[0];
@@ -53,7 +51,6 @@ const Navigation = () => {
 			// top='20px'
 			zIndex='0'
 		>
-
 			<Flex
 				height='100px'
 				justifyContent='space-between'
@@ -66,6 +63,7 @@ const Navigation = () => {
 				<Button to="/resume" color='#000' bg='#fff' border='2px dashed #fff' mt={{ default: '90vh', s: '0' }}>Resume</Button>
 				<Link to="/"><Image width='100px' src={Logo} alt="Logo" margin={{ default: '0 auto 20vh auto', s: '0' }} /></Link>
 				<Button to="/about" color='#000' bg='#fff' border='2px dashed #fff' mt={{ default: '90vh', s: '0' }}>About</Button>
+
 			</Flex>
 		</Box>
 	)

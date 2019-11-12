@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-
 import {
     Flex,
     ModalContainer,
@@ -21,6 +19,7 @@ import Close from '../asset/Close.svg'
 theme.breakpoints.s = theme.breakpoints[0];
 theme.breakpoints.m = theme.breakpoints[1];
 theme.breakpoints.l = theme.breakpoints[2];
+
 
 const About = () => {
     return (
@@ -79,7 +78,7 @@ const About = () => {
 
                 <li>
                     <P fontFamily='PlayFair Display'>IX - I wear a <A href='https://www.instagram.com/p/B1B_HUPnFg-'>mechanical watch</A> from the 1920s around my neck</P>
-                    <P fontFamily='Lato'>My great-grandmother received it as a wedding gift'</P>
+                    <P fontFamily='Lato'>My great-grandmother received it as a wedding gift</P>
                 </li>
 
 
@@ -89,7 +88,7 @@ const About = () => {
 
             </FactList>
 
-            <Flex justifyContent='space-between' alignItems='center' flexDirection='column'>
+            <Flex justifyContent='space-between' alignItems='center' flexDirection='column' mt='40px'>
                 <H3>You can stalk me on</H3>
                 <Flex justifyContent='space-between'>
                     <A fontFamily='Lato' color='#000' margin='8px' mt='0' href='https://github.com/herjoyfulness'>Github</A>
