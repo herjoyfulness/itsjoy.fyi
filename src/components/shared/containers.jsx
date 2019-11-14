@@ -36,7 +36,7 @@ const Background = styled.div`
 `
 
 const Container = styled.div`
-    max-width: 1260px;
+    max-width: 78em;
     margin-right:auto;
     margin-left:auto;
 `
@@ -45,14 +45,16 @@ const Flex = styled.div`
     background-image: url(${props => props.bg});
     background-repeat: no-repeat;
     display: flex;
+    position: relative;
+    pointer-events: ${props => props.noclick ? 'none' : 'auto'};
     box-sizing: border-box;
-    ${alignContent}
+    transform: ${props => props.nav ? 'translatey(50%)' : 'none'};
+    ${alignContent};
     ${alignItems};
     ${justifyContent};
     ${flexDirection};
     ${flexWrap};
     ${width};
-    ${maxWidth}
     ${height};
     ${margin};
     ${padding};
@@ -65,6 +67,8 @@ const Flex = styled.div`
 `
 
 const Box = styled.div`
+    position: relative;
+    pointer-events: ${props => props.noclick ? 'none' : 'auto'};
     box-sizing: border-box;
     ${display}
     ${alignItems};
@@ -81,7 +85,6 @@ const Box = styled.div`
     ${bottom};
     ${background};
     ${zIndex};
-    
 `
 
 const ModalContainer = styled.div`
@@ -95,36 +98,20 @@ const ModalContainer = styled.div`
     ::-webkit-scrollbar {
         display: none;
     }
-    -webkit-box-shadow: 0px 0px 24px -48px rgba(0,0,0,.4);
-    -moz-box-shadow: 0px 0px 24px -48px rgba(0,0,0,.4);
-    box-shadow: 0px 0px 24px -48px rgba(0,0,0,.4);
+    -webkit-box-shadow: 0 0 .5em .5em rgba(0,0,0,.2);
+    -moz-box-shadow: 0 0 5em .5em rgba(0,0,0,.2);
+    box-shadow: 0 0 5em .5em rgba(0,0,0,.2);
     ${left}
     ${right}
     ${width}
     ${padding}
 `
 
-const ProjectContainer = styled.div`
-    top: 0;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background-color: #FFF;
-    z-index: 3;
-    overflow-y: auto;
-`
-
 const Image = styled.img`
-    z-index: 2;
+    pointer-events: auto;
     ${width}
     ${boxShadow}
-    ${margin}    
-`
-
-const Display = styled.img`
-    margin: auto;
-    z-index: 2;
-    ${width}
+    ${margin}
 `
 
 export {
@@ -133,7 +120,5 @@ export {
     Flex,
     Box,
     ModalContainer,
-    ProjectContainer,
-    Image,
-    Display
+    Image
 }

@@ -12,24 +12,23 @@ import {
 } from '../components/shared/containers';
 import About from './About';
 import Resume from './Resume';
-import { ABC } from './Projects'
-import { theme } from '../components/shared/theme'
-
-theme.breakpoints.s = theme.breakpoints[0];
-theme.breakpoints.m = theme.breakpoints[1];
-theme.breakpoints.l = theme.breakpoints[2];
+import Project from './Projects'
+import HomeProject from './HomeProjects'
+import { projects, heroContent } from '../asset/content'
 
 const Home = () => {
   return (
     <Switch>
       <Route>
-        <Background position='fixed' backgroundSize='cover' zIndex='-1' top='0' />
+        <Background position='fixed' backgroundSize='cover' top='0' />
         <Box padding='0'>
 
           <Navigation />
 
-          <Flex width='80%' margin='auto'>
-            <Hero />
+          <Hero hero={heroContent} />
+
+          <Flex flexWrap='wrap' >
+            {projects.map((project, i) => <HomeProject key={i} {...project} />)}
           </Flex>
 
           <Route path="/resume">
@@ -38,9 +37,7 @@ const Home = () => {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/abc">
-            <ABC />
-          </Route>
+          {projects.map((project, i) => <Route key={i} path={project.path}><Project {...project} /></Route>)}
 
         </Box>
       </Route>

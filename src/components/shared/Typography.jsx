@@ -10,37 +10,45 @@ import {
     textAlign,
     lineHeight,
     margin,
+    padding,
     flexWrap,
     flexDirection,
-    border
+    border,
+    zIndex,
+    position
 } from 'styled-system';
 
 const H1 = styled.h1`
-    font-size: 27px;
-    line-height: 36px;
+    font-size: 1.5em;
+    line-height: 2em;
     text-align: justify;
-    ${fontFamily}
-    ${color}
-    ${fontWeight}
-    ${fontSize}
-    ${lineHeight}
-
+    margin: 0;
+    ${fontFamily};
+    ${color};
+    ${fontWeight};
+    ${fontSize};
+    ${lineHeight};
+    ${margin};
+    ${padding};
+    ${border};
 `
 
 const H2 = styled.h2`
-    line-height: 24px;
+    line-height: 1.5em;
     text-align: justify;
     ${fontFamily}
     ${fontWeight}
     ${fontSize}
     ${color}
+    ${background}
+    ${padding}
 `
 
 const H3 = styled.h3`
     font-family: Playfair Display;
     font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1em;
+    line-height: 1.5em;
     text-align: justify;
     ${color};
     ${textAlign}
@@ -49,8 +57,8 @@ const H3 = styled.h3`
 const P = styled.p`
     font-style: normal;
     font-weight: 300;
-    font-size: 16px;
-    margin: 4px 0;
+    font-size: 1em;
+    margin: 0.25em 0;
     ${fontFamily};
     ${color};
     ${margin}
@@ -59,11 +67,12 @@ const P = styled.p`
 const A = styled.a`
     color: #000;
     font-weight: 300;
-    font-size: 16px;
-    padding-bottom: 0px;
+    font-size: 1em;
+    padding-bottom: 0;
     text-decoration: none;
     box-sizing: border-box;
-    border-bottom: 2px solid #F48264;
+    pointer-events: auto;
+    border-bottom: 0.125em solid #F48264;
     :hover{
         font-weight: 300;
         color: #F48264;
@@ -77,9 +86,9 @@ const FactList = styled.ul`
     flex-direction: column;
     justify-content: space-between;
     list-style: none;
-    padding: 0px;
+    padding: 0;
     li {
-        margin: 8px 0px;
+        margin: 0.5em 0;
     };
     ${textAlign}
     ${margin}    
@@ -94,17 +103,17 @@ const List = styled.ul`
         display: inline-block;
         font-family: Lato;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 1em;
         font-style: normal;
-        line-height: 24px;
-        margin: 8px 16px 8px 0;
+        line-height: 1.5em;
+        margin: 0.5em 1em 0.5em 0;
     }    
     h3{
         font-family: Playfair Display;
         font-weight: 300;
-        font-size: 16px;
-        line-height: 24px;
-        margin: 8px 16px 8px 0;        
+        font-size: 1em;
+        line-height: 1.5em;
+        margin: 0.5em 1em 0.5em 0;        
     }
     ${width};
     ${margin}
@@ -113,32 +122,30 @@ const List = styled.ul`
     ${flexDirection}
 `
 
-const Break = styled.hr`
-    width: 40px;
-    height: 2px;
-    ${color}
-    ${margin}
-`
-
 const Button = styled(Link)`
     position: relative;
     font-family: Lato;
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1em;
+    line-height: 1.5em;
     text-align: center;
-    padding: 8px;
+    padding: .5em;
     text-decoration: none;
+    border: 2px solid #000;
+    pointer-events: auto;
     :hover {
         color: #000;
-        background-color: #FFF;         
+        background-color: #FFF;
     }
+    ${position}
     ${margin}
     ${color}
     ${width}
     ${border}
     ${background}
+    ${zIndex}
+    ${fontSize}
 `
 
 export {
@@ -149,6 +156,5 @@ export {
     A,
     FactList,
     List,
-    Break,
     Button,
 }

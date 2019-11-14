@@ -1,3 +1,3 @@
 export const theme = {
-    breakpoints: ['425px', '768px', '1040px']
+    breakpoints: ['32em', '48em', '60em']
 }
