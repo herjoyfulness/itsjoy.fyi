@@ -55,4 +55,8 @@ const Project = ({ title, source, heroImage, heroCopy, bodyCopy, projectTools })
     )
 }
 
+<<<<<<< HEAD:src/pages/projects.jsx
 export default Project
+=======
+export { ABC }
+>>>>>>> d7df7bbdd22309f5a6933b18df36ec3257c532e4:src/pages/Projects.jsx
