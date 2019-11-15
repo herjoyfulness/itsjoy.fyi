@@ -24,7 +24,7 @@ const Home = () => {
     <Switch>
       <Route>
         <Background position='fixed' backgroundSize='cover' top='0' />
-        <Box padding='0'>
+        <Box mobile padding='0'>
 
           <Navigation />
 

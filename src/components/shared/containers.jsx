@@ -47,6 +47,7 @@ const Flex = styled.div`
     pointer-events: ${props => props.noclick ? 'none' : 'auto'};
     box-sizing: border-box;
     background-position: center;
+    min-height: ${props => props.mobile ? '-webkit-fill-available' : 'none'};
     ${alignContent};
     ${alignItems};
     ${justifyContent};
@@ -68,6 +69,7 @@ const Box = styled.div`
     position: relative;
     pointer-events: ${props => props.noclick ? 'none' : 'auto'};
     box-sizing: border-box;
+    min-height: ${props => props.mobile ? '-webkit-fill-available' : 'none'};
     ${display}
     ${alignItems};
     ${justifyContent};
