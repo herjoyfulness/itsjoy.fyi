@@ -48,6 +48,7 @@ const Flex = styled.div`
     box-sizing: border-box;
     background-position: center;
     min-height: ${props => props.mobile ? '-webkit-fill-available' : 'none'};
+    overflow-x: hidden;
     ${alignContent};
     ${alignItems};
     ${justifyContent};
@@ -70,6 +71,7 @@ const Box = styled.div`
     pointer-events: ${props => props.noclick ? 'none' : 'auto'};
     box-sizing: border-box;
     min-height: ${props => props.mobile ? '-webkit-fill-available' : 'none'};
+    overflow-x: hidden;
     ${display}
     ${alignItems};
     ${justifyContent};
