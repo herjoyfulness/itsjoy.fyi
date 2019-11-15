@@ -3,18 +3,21 @@ import {
   Switch,
   Route
 } from 'react-router-dom'
-import Navigation from '../components/shared/Navigation';
-import Hero from '../components/Hero';
 import {
   Background,
-  Flex,
   Box
 } from '../components/shared/containers';
+import {
+  projects,
+  heroContent
+} from '../asset/content';
+
+import Navigation from '../components/shared/Navigation';
+import Hero from '../components/Hero';
 import About from './About';
 import Resume from './Resume';
-import Project from './Projects'
-import HomeProject from './HomeProjects'
-import { projects, heroContent } from '../asset/content'
+import Project from './Projects';
+import Content from '../components/Content';
 
 const Home = () => {
   return (
@@ -25,11 +28,9 @@ const Home = () => {
 
           <Navigation />
 
-          <Hero hero={heroContent} />
+          <Hero {...heroContent} />
 
-          <Flex flexWrap='wrap' >
-            {projects.map((project, i) => <HomeProject key={i} {...project} />)}
-          </Flex>
+          <Content />
 
           <Route path="/resume">
             <Resume />

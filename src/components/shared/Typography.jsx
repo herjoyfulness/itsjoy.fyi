@@ -4,7 +4,7 @@ import {
     color,
     background,
     width,
-    fontFamily,
+    fontStyle,
     fontSize,
     fontWeight,
     textAlign,
@@ -19,11 +19,11 @@ import {
 } from 'styled-system';
 
 const H1 = styled.h1`
-    font-size: 1.5em;
-    line-height: 2em;
-    text-align: justify;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+    line-height: 1.5em;
     margin: 0;
-    ${fontFamily};
     ${color};
     ${fontWeight};
     ${fontSize};
@@ -34,54 +34,62 @@ const H1 = styled.h1`
 `
 
 const H2 = styled.h2`
+    font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.5em;
-    text-align: justify;
-    ${fontFamily}
-    ${fontWeight}
-    ${fontSize}
-    ${color}
-    ${background}
-    ${padding}
+    text-align: left;
+    ${fontWeight};
+    ${fontSize};
+    ${color};
+    ${background};
+    ${padding};
 `
 
 const H3 = styled.h3`
-    font-family: Playfair Display;
-    font-weight: 300;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
     font-size: 1em;
     line-height: 1.5em;
     text-align: justify;
+    ${fontWeight};
     ${color};
-    ${textAlign}
+    ${textAlign};
 `
 
 const P = styled.p`
-    font-style: normal;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
     font-size: 1em;
     margin: 0.25em 0;
-    ${fontFamily};
+    ${fontStyle};
+    ${fontWeight};
     ${color};
-    ${margin}
+    ${margin};
 `
 
 const A = styled.a`
+    font-family: 'Source Sans Pro', sans-serif;
     color: #000;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1em;
     padding-bottom: 0;
     text-decoration: none;
     box-sizing: border-box;
     pointer-events: auto;
+    fill: #FFF;
     border-bottom: 0.125em solid #F48264;
     :hover{
-        font-weight: 300;
-        color: #F48264;
+        color: #FFF;
+        background: ${props => props.icon ? 'none' : '#F48264'};
+        fill: #000;
     }
-    ${fontFamily}
-    ${margin}
+    ${margin};
+    ${color};
+    ${fontWeight};
+    ${border};
 `
 
 const FactList = styled.ul`
+    font-family: 'Source Sans Pro', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -90,8 +98,8 @@ const FactList = styled.ul`
     li {
         margin: 0.5em 0;
     };
-    ${textAlign}
-    ${margin}    
+    ${textAlign};
+    ${margin};
 `
 
 const List = styled.ul`
@@ -101,51 +109,52 @@ const List = styled.ul`
     padding: 0;
     li{
         display: inline-block;
-        font-family: Lato;
-        font-weight: 400;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 300;
         font-size: 1em;
         font-style: normal;
         line-height: 1.5em;
         margin: 0.5em 1em 0.5em 0;
     }    
     h3{
-        font-family: Playfair Display;
-        font-weight: 300;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 400;
         font-size: 1em;
         line-height: 1.5em;
         margin: 0.5em 1em 0.5em 0;        
     }
     ${width};
-    ${margin}
-    ${color}
-    ${flexWrap}
-    ${flexDirection}
+    ${margin};
+    ${color};
+    ${flexWrap};
+    ${flexDirection};
 `
 
-const Button = styled(Link)`
-    position: relative;
-    font-family: Lato;
+const AHome = styled(Link)`
+    font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 1em;
     line-height: 1.5em;
     text-align: center;
-    padding: .5em;
+    padding: ${props => props.nav ? '.5em' : '0'};
     text-decoration: none;
-    border: 2px solid #000;
     pointer-events: auto;
+    color: #FFF;
+    border-bottom: .1em solid #FFF;
     :hover {
         color: #000;
         background-color: #FFF;
     }
-    ${position}
-    ${margin}
-    ${color}
-    ${width}
-    ${border}
-    ${background}
-    ${zIndex}
-    ${fontSize}
+    ${position};
+    ${margin};
+    ${color};
+    ${width};
+    ${border};
+    ${background};
+    ${zIndex};
+    ${fontSize};
+    ${padding};
 `
 
 export {
@@ -156,5 +165,5 @@ export {
     A,
     FactList,
     List,
-    Button,
+    AHome as Link
 }

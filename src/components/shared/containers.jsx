@@ -7,7 +7,6 @@ import {
     alignItems,
     alignContent,
     width,
-    maxWidth,
     padding,
     margin,
     height,
@@ -20,16 +19,15 @@ import {
     backgroundPosition,
     backgroundSize,
     zIndex,
-    boxShadow
+    boxShadow,
+    color,
+    opacity
 } from 'styled-system'
-import BackgroundImg from '../../asset/4.jpg';
 
 const Background = styled.div`
     display: flex;
     align-items: center;
     width: 100vw;
-    height: 100vh;
-    background-image: url(${BackgroundImg});
     background-size: cover;
     ${position};
     ${zIndex};
@@ -48,7 +46,7 @@ const Flex = styled.div`
     position: relative;
     pointer-events: ${props => props.noclick ? 'none' : 'auto'};
     box-sizing: border-box;
-    transform: ${props => props.nav ? 'translatey(50%)' : 'none'};
+    background-position: center;
     ${alignContent};
     ${alignItems};
     ${justifyContent};
@@ -109,9 +107,13 @@ const ModalContainer = styled.div`
 
 const Image = styled.img`
     pointer-events: auto;
-    ${width}
-    ${boxShadow}
-    ${margin}
+    ${height};
+    ${width};
+    ${boxShadow};
+    ${margin};
+    ${opacity};
+    ${color};
+    ${zIndex};
 `
 
 export {

@@ -29,7 +29,7 @@ const Project = ({ title, source, heroImage, heroCopy, bodyCopy, projectTools })
             <Flex margin='auto' padding={{ default: '1.5em', m: '5em' }} flexDirection='column' alignItems='center'>
 
                 <Flex width={{ default: '18em', s: '20em', m: '40em', l: '48em' }} justifyContent='space-between' alignItems='center'>
-                    <H1 fontFamily='Lato' color='#000' fontSize={{ default: '1.2em', m: '1.2em' }}>{title}</H1>
+                    <H1 color='#000' fontSize={{ default: '1.2em', m: '1.2em' }}>{title}</H1>
                     <Link to="/"><Image width='1em' src={Close} /></Link>
                 </Flex>
 
@@ -37,19 +37,13 @@ const Project = ({ title, source, heroImage, heroCopy, bodyCopy, projectTools })
 
                 <Box width={{ default: '18em', s: '20em', m: '40em', l: '48em' }} padding={{ default: '1em', m: '0' }}>
                     <H3 color='#000'>{heroCopy}</H3>
-                    {bodyCopy.map(p => <P fontFamily='Lato' margin='1em 0'>{p}</P>)}
+                    {bodyCopy.map((p, i) => <P margin='1em 0' key={i}>{p}</P>)}
                     <List flexDirection='row'>
                         <h3>Tools</h3>
                         {projectTools.map((t, i) => <li key={i}>{t}</li>)}
                     </List>
-
                     {external}
-
-
                 </Box>
-
-
-
             </Flex>
         </ModalContainer >
     )

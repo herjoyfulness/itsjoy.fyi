@@ -1,19 +1,18 @@
 import React from 'react';
 import {
     Flex,
-} from './shared/containers'
+    Box
+} from './shared/containers';
 import { H1 } from './shared/Typography';
 
 const Hero = ({ heroText }) => {
     return (
         <Flex width='100vw' height='100vh' mt={{ default: '0', s: '-100vh' }} >
-            <Flex margin='auto' padding='1.5em' flexDirection='column'>
-                <H1 fontFamily='Lato' color='#FFF' bg='#000' padding='.5em' fontWeight='600' lineHeight='1.5em' fontSize={{ default: '1em', s: '1.2em' }} border='2px solid #000'>{heroText}</H1>
-            </Flex>
+            <Box margin='auto' width={{ default: '60vw', l: '40vw' }} flexDirection='column' justifyContent='center'>
+                <H1 fontFamily='Lato' color='#FFF' fontSize={{ default: '1.2em', s: '2em' }}  >{heroText}</H1>
+            </Box>
         </Flex>
     )
 }
-
-
 
 export default Hero
