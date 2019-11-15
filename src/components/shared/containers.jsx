@@ -20,6 +20,7 @@ import {
     backgroundSize,
     zIndex,
     boxShadow,
+    overflow,
     color,
     opacity
 } from 'styled-system'
@@ -47,8 +48,7 @@ const Flex = styled.div`
     pointer-events: ${props => props.noclick ? 'none' : 'auto'};
     box-sizing: border-box;
     background-position: center;
-    min-height: ${props => props.mobile ? '-webkit-fill-available' : 'none'};
-    overflow-x: hidden;
+    ${overflow};
     ${alignContent};
     ${alignItems};
     ${justifyContent};
@@ -70,8 +70,7 @@ const Box = styled.div`
     position: relative;
     pointer-events: ${props => props.noclick ? 'none' : 'auto'};
     box-sizing: border-box;
-    min-height: ${props => props.mobile ? '-webkit-fill-available' : 'none'};
-    overflow-x: hidden;
+    ${overflow};
     ${display}
     ${alignItems};
     ${justifyContent};
@@ -111,6 +110,7 @@ const ModalContainer = styled.div`
 
 const Image = styled.img`
     pointer-events: auto;
+    overflow: hidden;
     ${height};
     ${width};
     ${boxShadow};

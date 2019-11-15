@@ -17,7 +17,7 @@ import Close from '../asset/Close.svg'
 
 const About = () => {
     return (
-        <ModalContainer right='0' width={{ default: '100%', m: '48em' }} padding={{ default: '1.5em', s: '5em 7.5em' }}>
+        <ModalContainer right='0' width={{ default: '100%', m: '48em' }} padding={{ default: '1.5em', m: '5em 7.5em' }}>
             <Flex margin='auto' flexDirection='column' width={{ default: '17em', s: '100%' }}>
 
                 <Flex justifyContent='space-between' alignItems='center'>

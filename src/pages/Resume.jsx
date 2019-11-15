@@ -16,7 +16,7 @@ import Close from '../asset/Close.svg';
 
 const Resume = () => {
     return (
-        <ModalContainer left='0' width={{ default: '100%', m: '48em' }} padding={{ default: '0 0 2em 0', s: '5em 7.5em' }}>
+        <ModalContainer left='0' width={{ default: '100%', m: '48em' }} padding={{ default: '1.5em', m: '5em' }}>
             <Flex margin='auto' flexDirection='column' width={{ default: '18em', s: '100%' }}>
 
                 <Flex justifyContent='space-between' alignItems='center'>
