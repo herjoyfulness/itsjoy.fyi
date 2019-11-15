@@ -15,13 +15,18 @@ import {
 } from '../components/shared/Typography';
 import Close from '../asset/Close.svg';
 
-const Project = ({ title, source, heroImage, heroCopy, bodyCopy, projectTools }) => {
+const Project = ({ title, source, heroImage, heroCopy, bodyCopy, photos, projectTools }) => {
 
     let external
     if (source !== undefined) {
         external = <A href={source}>{title}</A>
     } else {
         external = null
+    }
+
+    let photo
+    if (photos !== undefined) {
+        photo = photos.map((photo, i) => <Image width='100%' src={photo} key={i} />)
     }
 
     return (
@@ -35,13 +40,17 @@ const Project = ({ title, source, heroImage, heroCopy, bodyCopy, projectTools })
 
                 <Image width={{ default: '32em', s: '32em', m: '60em', l: '72em' }} src={heroImage} />
 
-                <Box width={{ default: '18em', s: '20em', m: '40em', l: '48em' }} padding={{ default: '1em', m: '0' }}>
+                <Box width={{ default: '18em', s: '20em', m: '40em', l: '48em' }} padding={{ default: '1em', m: '0' }} alignItems='center'>
                     <H3 color='#000'>{heroCopy}</H3>
-                    {bodyCopy.map((p, i) => <P margin='1em 0' key={i}>{p}</P>)}
-                    <List flexDirection='row'>
+                    {bodyCopy.map((p, i) => <P margin='1em 0' textAlign='justify' key={i}>{p}</P>)}
+
+                    <List flexDirection='row' flexWrap='wrap'>
                         <h3>Tools</h3>
                         {projectTools.map((t, i) => <li key={i}>{t}</li>)}
                     </List>
+
+                    {photo}
+
                     {external}
                 </Box>
             </Flex>

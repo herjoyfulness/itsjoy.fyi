@@ -64,6 +64,7 @@ const P = styled.p`
     ${fontWeight};
     ${color};
     ${margin};
+    ${textAlign};
 `
 
 const A = styled.a`
@@ -86,6 +87,7 @@ const A = styled.a`
     ${color};
     ${fontWeight};
     ${border};
+    ${textAlign};
 `
 
 const FactList = styled.ul`
