@@ -18,8 +18,9 @@ export const projects = [
         heroImage: houseofjoyHero,
         heroCopy: 'To practice working with React.js and Styled Components, I redesigned and rewrote my portfolio. This project also allowed me to figure out version control on Github through the command line.',
         bodyCopy: [
-            'I started with wireframing in Figma, going for a compact approach by having the About and Resume pages lay on top of the homepage. These two pages have the same width as most common tablets do (give or take 768 pixels wide), which allowed for more consistency compared to, say, using viewport width. For mobile, I opted to have the navigation at the bottom, opposed to using a \'classic\' hamburger menu which you see on many other websites. The reason behind this choice is that, quite frankly, I think the hamburger menu is not user-friendly, specially on mobile. The menu is not visible, it\'s not on the screen, unless you perform an action. Not to mention the fact that most people use them at the top of the screen, which a lot of users, including myself, can\'t reach with one hand.',
-            'For the design I went with a minimal yet bold approach with a focus on large coloured visuals. ',
+            'Wireframing was done in Figma, going for a mobile-centric design. I went for a compact approach by having the About and Resume pages lay on top of the homepage. These two pages have the same width as most common tablets do (give or take 768 pixels wide), which allowed for more consistency compared to, say, using viewport width.',
+            'I opted to have the navigation at the bottom for smartphones and at the top for other devices, opposed to using a \'classic\' hamburger menu which you see on many other websites. The reason behind this choice is that, quite frankly, I think the hamburger menu is not user-friendly, specially on mobile. The menu is not visible, it\'s not on the screen, unless you perform an action. Not to mention the fact that most people use them at the top of the screen, which a lot of users, including myself, can\'t reach with one hand.',
+            'For the design I went with a minimal yet bold approach with a focus on colour. ',
             'Snackie'],
         projectTools: ['React.js', 'Styled Components', 'JavaScript', 'Github', 'Figma']
     },
@@ -32,7 +33,8 @@ export const projects = [
         heroCopy: 'Alexandra Bradley is an Early Years Education specalist based in London with a decade of experience teaching in some of the most prestigious educational establishments in the Central London area. Known for her honest and supportive mentoring role to parents and with her ethos of "happiness, safety and wellbeing of the child is paramount" she is perfectly placed to guide and help you navigate your child\'s early years.',
         bodyCopy: [
             'To enhance the digital presence for her brand, Alexandra Bradley Consulting, she requested a clean, simple and accessible website.',
-            'placeholder derp derp derp'
+            'Alexandra loved the website and colleagues of Jackie Robson (Red Ventures, codereviewer) were well impressed by the fact I wrote clean and semantic code a week after picking development up. The positive feedback and my drive to keep improving my work and myself have had a massive impact on ability to pick up new things.',
+            'Designs were provided by Leonardo Zem of Red Ventures.'
         ],
         projectTools: [
             'HTML & CSS',

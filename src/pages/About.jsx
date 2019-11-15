@@ -33,7 +33,7 @@ const About = () => {
                 <FactList textAlign='center' mb='1em'>
                     <li>
                         <P fontWeight='400'>I - My name appears in - every single - English dictionary</P>
-                        <P fontStyle='italic'><A href='https://dictionary.cambridge.org/dictionary/english/joy'>Joy</A> • /dʒɔɪ/ noun • a feeling of great pleasure and happiness</P>
+                        <P ><A href='https://dictionary.cambridge.org/dictionary/english/joy'>Joy</A> • /dʒɔɪ/ noun • a feeling of great pleasure and happiness</P>
                     </li>
 
                     <li>
@@ -42,7 +42,7 @@ const About = () => {
 
                     <li>
                         <P fontWeight='400'>III - My girlfriend and I adopted a <A href='https://www.instagram.com/p/B4h05Q_nX3V'>koi plakat siamese fighting fish</A></P>
-                        <P fontStyle='italic'>He is known as Char, the Red Comet</P>
+                        <P >He is known as Char, the Red Comet</P>
                     </li>
 
                     <li>
@@ -51,16 +51,16 @@ const About = () => {
 
                     <li>
                         <P fontWeight='400'>V - I was born with two different colours of hair</P>
-                        <P fontStyle='italic'>It's called <A href='https://www.glamourmagazine.co.uk/article/mallen-streak-hair-trend'>poliosis</A> or a 'mallen streak'</P>
+                        <P >It's called <A href='https://www.glamourmagazine.co.uk/article/mallen-streak-hair-trend'>poliosis</A> or a 'mallen streak'</P>
                     </li>
 
                     <li>
-                        <P fontWeight='400'>VI - I try to travel to <A href='https://www.instagram.com/p/ByweETLCoJU'>a new place</A> once a year</P>
+                        <P fontWeight='400'>VI - I have a tattoo of a cat walking on a string on my ankle</P>
                     </li>
 
                     <li>
-                        <P fontWeight='400'>VII - I was born and raised in <A href='https://en.wikipedia.org/wiki/Waalwijk'>Waalwijk</A>, the Netherlands</P>
-                        <P fontStyle='italic'>Bonus points if you manage to pronounce it</P>
+                        <P fontWeight='400'>VII - I wear a <A href='https://www.instagram.com/p/B1B_HUPnFg-'>mechanical watch</A> from the 1920s around my neck</P>
+                        <P >My great-grandmother received it as a wedding gift</P>
                     </li>
 
                     {/* <li>
@@ -68,14 +68,13 @@ const About = () => {
                     </li> */}
 
                     <li>
-                        <P fontWeight='400'>VIII - I have a tattoo of a cat walking on a string on my ankle</P>
+                        <P fontWeight='400'>VIII - I try to travel to <A href='https://www.instagram.com/p/ByweETLCoJU'>a new place</A> once a year</P>
                     </li>
 
                     <li>
-                        <P fontWeight='400'>IX - I wear a <A href='https://www.instagram.com/p/B1B_HUPnFg-'>mechanical watch</A> from the 1920s around my neck</P>
-                        <P fontStyle='italic'>My great-grandmother received it as a wedding gift</P>
+                        <P fontWeight='400'>XI - I was born and raised in <A href='https://en.wikipedia.org/wiki/Waalwijk'>Waalwijk</A>, the Netherlands</P>
+                        <P>I've also lived in Breda, a very cozy city</P>
                     </li>
-
 
                     <li>
                         <P fontWeight='400'>X - My most played track is <A href='https://open.spotify.com/track/57q1oT76QVjLw7xnuCaAQc'>Dream Machine</A> by Dominik Eulberg</P>
