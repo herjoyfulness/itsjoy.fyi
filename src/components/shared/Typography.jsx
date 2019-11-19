@@ -139,14 +139,13 @@ const AHome = styled(Link)`
     font-size: 1em;
     line-height: 1.5em;
     text-align: center;
-    padding: ${props => props.nav ? '.5em' : '0'};
     text-decoration: none;
     pointer-events: auto;
     color: #FFF;
     border-bottom: .1em solid #FFF;
     :hover {
         color: #000;
-        background-color: #FFF;
+        background-color: ${props => props.nav ? 'none' : '#FFF'};
     }
     ${position};
     ${margin};

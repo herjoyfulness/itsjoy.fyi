@@ -25,15 +25,6 @@ import {
     opacity
 } from 'styled-system'
 
-const Background = styled.div`
-    display: flex;
-    align-items: center;
-    width: 100vw;
-    background-size: cover;
-    ${position};
-    ${zIndex};
-`
-
 const Container = styled.div`
     max-width: 78em;
     margin-right:auto;
@@ -121,7 +112,6 @@ const Image = styled.img`
 `
 
 export {
-    Background,
     Container,
     Flex,
     Box,

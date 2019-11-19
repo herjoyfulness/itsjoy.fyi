@@ -14,7 +14,7 @@ import {
 
 export const heroContent = {
     heroHello: 'Hello, my name is Joy',
-    heroText: 'Hello. I used to design things in the land of clogs and windmills. Now I like building the internet in the capital of our green and pleasant land.',
+    heroText: 'Hello. I used to design things in the land of clogs and windmills. Now I like building the internet in central London.',
 }
 
 export const projects = [
