@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Switch,
   Route
@@ -21,10 +21,7 @@ import Content from '../components/Content';
 const Home = () => {
 
   const [bodyLock, setBodyLock] = useState(false);
-
-  if (bodyLock === true) {
-    setBodyLock(false)
-  }
+  useEffect(() => setBodyLock(false), [])
 
   return (
     <Switch>
