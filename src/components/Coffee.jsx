@@ -1,12 +1,15 @@
 import React from 'react';
 import { Flex } from './shared/containers';
-import { H2, A } from './shared/Typography';
+import {
+    H2,
+    A
+} from './shared/Typography';
 
 const Coffee = () => {
     return (
         <Flex width={{ default: '60vw', l: '40vw' }} height='100vh'>
             <Flex flexDirection='column' margin='auto' height='40vh' alignItems='center' justifyContent='space-between'>
-                <H2 fontSize={{ default: '1.2em', m: '1.4em', l: '1.8em' }} color='#fff' textAlign='left' >You can stalk me on all of these. Or ask me to grab a coffee. Or tea. Or a beer. Whichever you fancy.</H2>
+                <H2 fontSize={{ default: '1.2em', m: '1.4em', l: '1.8em' }} color='#fff' textAlign='justify' >You can stalk me on all of these. Or ask me to grab a coffee. Or a beer. Whichever you fancy.</H2>
 
                 <Flex width={{ default: '12em', s: '16em' }} justifyContent='space-between' margin='auto'>
 
