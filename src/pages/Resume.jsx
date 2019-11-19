@@ -16,12 +16,12 @@ import Close from '../asset/Close.svg';
 
 const Resume = () => {
     return (
-        <ModalContainer left='0' width={{ default: '100%', m: '48em' }} padding={{ default: '1.5em', m: '5em' }}>
-            <Flex margin='auto' flexDirection='column' width={{ default: '18em', s: '100%' }}>
+        <ModalContainer left='0' width={{ default: '100%', m: '48em' }} padding={{ default: '1.5em', s: '5em' }}>
+            <Flex margin='auto' flexDirection='column' width={{ default: '17em', s: '100%' }}>
 
                 <Flex justifyContent='space-between' alignItems='center'>
                     <H2 fontSize='1.2em' color='#000'>Resume</H2>
-                    <Link to="/"><Image width='1.2em' src={Close} /></Link>
+                    <Link to="/"><Image width='1em' src={Close} /></Link>
                 </Flex>
 
                 <H3 textAlign='center'>"I create everything digital, clean and minimal" <br />Or so she says.</H3>

@@ -7,7 +7,7 @@ import {
     Image
 } from '../components/shared/containers';
 import {
-    H1,
+    H2,
     H3,
     A,
     P,
@@ -20,8 +20,6 @@ const Project = ({ title, source, heroImage, heroCopy, bodyCopy, photos, project
     let external
     if (source !== undefined) {
         external = <A href={source}>{title}</A>
-    } else {
-        external = null
     }
 
     let photo
@@ -30,17 +28,17 @@ const Project = ({ title, source, heroImage, heroCopy, bodyCopy, photos, project
     }
 
     return (
-        <ModalContainer width='100%' overflowY='hidden'>
-            <Flex margin='auto' padding={{ default: '1.5em', m: '5em' }} flexDirection='column' alignItems='center' overflowY='hidden'>
+        <ModalContainer top='0' width='100%' >
+            <Flex margin='auto' flexDirection='column' width={{ default: '100%', m: '48em' }} padding={{ default: '1.5em', s: '5em' }} alignItems='center'>
 
-                <Flex width={{ default: '18em', s: '20em', m: '40em', l: '48em' }} justifyContent='space-between' alignItems='center'>
-                    <H1 color='#000' fontSize={{ default: '1.2em', m: '1.2em' }}>{title}</H1>
+                <Flex width={{ default: '17em', s: '100%' }} justifyContent='space-between' alignItems='center'>
+                    <H2 fontSize='1.2em' color='#000'>{title}</H2>
                     <Link to="/"><Image width='1em' src={Close} /></Link>
                 </Flex>
 
-                <Image width={{ default: '32em', s: '32em', m: '60em', l: '72em' }} src={heroImage} />
+                <Image width={{ default: '32em', s: '48em', m: '60em', l: '72em' }} src={heroImage} />
 
-                <Box width={{ default: '18em', s: '20em', m: '40em', l: '48em' }} padding={{ default: '1em', m: '0' }} alignItems='center'>
+                <Box width={{ default: '17em', s: '100%' }} alignItems='center'>
                     <H3 color='#000'>{heroCopy}</H3>
                     {bodyCopy.map((p, i) => <P margin='1em 0' textAlign='justify' key={i}>{p}</P>)}
                     <List flexDirection='row' flexWrap='wrap'>

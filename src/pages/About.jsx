@@ -17,12 +17,12 @@ import Close from '../asset/Close.svg'
 
 const About = () => {
     return (
-        <ModalContainer right='0' width={{ default: '100%', m: '48em' }} padding={{ default: '1.5em', m: '5em 7.5em' }}>
+        <ModalContainer right='0' width={{ default: '100%', m: '48em' }} padding={{ default: '1.5em', s: '5em' }}>
             <Flex margin='auto' flexDirection='column' width={{ default: '17em', s: '100%' }}>
 
                 <Flex justifyContent='space-between' alignItems='center'>
-                    <H2 fontSize='1.2em' color='#000'>About</H2>
-                    <Link to="/"><Image width='1.2em' src={Close} mt='.2em' /></Link>
+                    <H2 fontSize='1.2em' color='#000'>Resume</H2>
+                    <Link to="/"><Image width='1em' src={Close} /></Link>
                 </Flex>
 
                 <Image width='100%' src={PhotoMe} />

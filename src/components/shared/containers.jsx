@@ -95,7 +95,7 @@ const ModalContainer = styled.div`
     z-index: 2;
     background-color: #FFF;
     box-sizing: border-box;
-    overflow-y: auto;
+    overflow-x: hidden;
     ::-webkit-scrollbar {
         display: none;
     }
