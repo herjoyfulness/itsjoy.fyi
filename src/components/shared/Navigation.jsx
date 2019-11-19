@@ -5,7 +5,7 @@ import { Link } from './Typography';
 const Navigation = () => {
 
 	return (
-		<Flex noclick width='100vw' height='100vh' position={{ default: 'fixed', s: 'sticky' }} top='0' zIndex='1' justifyContent='space-between' alignItems={{ default: 'flex-end', s: 'flex-start' }} margin='auto' padding='1.5em' >
+		<Flex noclick width='100vw' height='100vh' position={{ default: 'fixed', s: 'sticky' }} top='0' zIndex='1' justifyContent='space-between' alignItems={{ default: 'flex-end', s: 'flex-start' }} margin='auto' padding='4em' >
 
 			<Link nav='true' to="/resume" fontSize={{ default: '1em', s: '1.2em' }} color='#fff' border='none' >Resume</Link>
 
