@@ -73,7 +73,7 @@ const About = () => {
                     </li>
 
                     <li>
-                        <P fontWeight='400'>XI - I was born and raised in <A href='https://en.wikipedia.org/wiki/Waalwijk'>Waalwijk</A>, the Netherlands</P>
+                        <P fontWeight='400'>IX - I was born and raised in <A href='https://en.wikipedia.org/wiki/Waalwijk'>Waalwijk</A>, the Netherlands</P>
                         <P>I've also lived in Breda, a very cozy city</P>
                     </li>
 
