@@ -13,9 +13,7 @@ import {
 } from './images';
 
 export const heroContent = {
-    heroHello: 'Hello, my name is Joy',
-    heroText:
-        'Hello! I used to colour boxes in the land of clogs and windmills. Now I make boxes from scratch in the green and pleasant land.'
+    heroText: 'Hello! I used to colour boxes in the land of clogs and windmills. Now I make boxes from scratch in the green and pleasant land.'
 }
 
 export const projects = [
