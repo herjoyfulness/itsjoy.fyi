@@ -20,7 +20,6 @@ export const projects = [
     {
         path: '/houseofjoy',
         title: 'House of Joy',
-        desc: undefined,
         source: undefined,
         heroImage: houseofjoyHero,
         heroCopy: 'To practice working with React.js and Styled Components, I redesigned and rewrote my portfolio. This project also allowed me to figure out version control on Github through the command line.',
@@ -41,7 +40,6 @@ export const projects = [
     {
         path: '/abc',
         title: 'Alexandra Bradley Consulting',
-        desc: 'I recently created a website for Alexandra Bradley, a London based consultant for children.',
         source: 'http://alexandrabradleyconsulting.com',
         heroImage: abcHero,
         heroCopy: 'Alexandra Bradley is an Early Years Education specalist based in London with a decade of experience teaching in some of the most prestigious educational establishments in the Central London area. Known for her honest and supportive mentoring role to parents and with her ethos of "happiness, safety and wellbeing of the child is paramount" she is perfectly placed to guide and help you navigate your child\'s early years.',
@@ -59,7 +57,6 @@ export const projects = [
     {
         path: '/photography',
         title: 'Photography',
-        desc: 'Photography is sort of my second love, I try to drag my camera with me wherever I go.',
         source: undefined,
         heroImage: photographyHero,
         heroCopy: 'I first played with cameras, both film and photo, when I was around 5 years old. My grandfather had a lot of them and always let me fiddle around with the older ones. It led to me purchasing my own DSLR with a 35mm f/1.8 prime lens years later.',
