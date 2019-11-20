@@ -3,9 +3,7 @@ import {
   Switch,
   Route
 } from 'react-router-dom';
-import {
-  Box
-} from '../components/shared/containers';
+import { Box } from '../components/shared/containers';
 import {
   projects,
   heroContent
