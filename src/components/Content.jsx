@@ -12,7 +12,7 @@ const HomeProject = () => {
 
     return (
         <Flex flexWrap='no-wrap' flexDirection='column' alignItems='center' justifyItems='center' >
-            <Flex width='100vw' height='100vh'>
+            <Flex height='100vh'>
                 <Flex height='40vh' width={{ default: '60vw', l: '40vw' }} alignItems='center' margin='auto' bg={Joy}>
                     <H2 fontSize={{ default: '1.2em', m: '1.4em', l: '1.8em' }} color='#fff' textAlign='left' >
                         I designed <Link to='/houseofjoy'>a new portfolio</Link> using my new-found React.js knowledge.
@@ -22,7 +22,7 @@ const HomeProject = () => {
                 </Flex>
             </Flex>
 
-            <Flex width='100vw' height='100vh'>
+            <Flex height='100vh'>
                 <Flex height='30vh' width={{ default: '60vw', l: '40vw' }} alignItems='center' margin='auto' bg={ABC}>
                     <H2 fontSize={{ default: '1.2em', m: '1.4em', l: '1.8em' }} color='#fff' textAlign='left'>
                         I recently created <Link to='/abc'>a website</Link> for Alexandra Bradley, a London based consultant for children.
@@ -32,7 +32,7 @@ const HomeProject = () => {
                 </Flex>
             </Flex>
 
-            <Flex width='100vw' height='100vh'>
+            <Flex height='100vh'>
                 <Flex height='40vh' width={{ default: '60vw', l: '40vw' }} alignItems='center' margin='auto' >
                     <H2 fontSize={{ default: '1.2em', m: '1.4em', l: '1.8em' }} color='#fff' textAlign='left'>
                         <Link to='/photography'>Photography</Link> is sort of my second love, I try to drag my camera with me wherever I go.
