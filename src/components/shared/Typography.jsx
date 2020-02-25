@@ -24,6 +24,7 @@ const H1 = styled.h1`
     font-size: 3em;
     line-height: 1.5em;
     margin: 0;
+    font-display: swap;
     ${color};
     ${fontWeight};
     ${fontSize};
@@ -37,6 +38,7 @@ const H2 = styled.h2`
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.5em;
     text-align: left;
+    font-display: swap;
     ${fontWeight};
     ${fontSize};
     ${color};
@@ -50,6 +52,7 @@ const H3 = styled.h3`
     font-size: 1em;
     line-height: 1.5em;
     text-align: justify;
+    font-display: swap;
     ${fontWeight};
     ${color};
     ${textAlign};
@@ -60,6 +63,7 @@ const P = styled.p`
     font-weight: 300;
     font-size: 1em;
     margin: 0.25em 0;
+    font-display: swap;
     ${fontStyle};
     ${fontWeight};
     ${color};
@@ -83,6 +87,7 @@ const A = styled.a`
         background: ${props => props.icon ? 'none' : '#F48264'};
         fill: #000;
     }
+    font-display: swap;
     ${margin};
     ${color};
     ${fontWeight};
@@ -100,6 +105,7 @@ const FactList = styled.ul`
     li {
         margin: 0.5em 0;
     };
+    font-display: swap;
     ${textAlign};
     ${margin};
 `
@@ -125,6 +131,7 @@ const List = styled.ul`
         line-height: 1.5em;
         margin: 0.5em 1em 0.5em 0;        
     }
+    font-display: swap;
     ${width};
     ${margin};
     ${color};
@@ -147,6 +154,7 @@ const AHome = styled(Link)`
         color: #000;
         background-color: ${props => props.nav ? 'none' : '#FFF'};
     }
+    font-display: swap;
     ${position};
     ${margin};
     ${color};
