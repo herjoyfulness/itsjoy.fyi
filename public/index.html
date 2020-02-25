@@ -12,10 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <link rel="apple-touch-icon" href="logo192.png" />
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link async href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&display=swap" rel="stylesheet">
-
+  
     <meta name="Description" content="This is Joy van der Veeken's portfolio. She made this using React.js, Styled Components, JavaScript and some other things. Deployed from Github through Netlify.">
 
     <title>Hi, I'm Joy</title>
@@ -25,9 +22,24 @@
     margin: 0;
     background: linear-gradient(135deg, rgba(254,172,94,1) 0%, rgba(244,130,100,1) 25%, rgba(232,108,137,1) 50%, rgba(192,103,169,1) 75%, rgba(128,109,185,1) 100%);"
   >
-  <div >
-    <noscript>This is not the page you're looking for. I find your lack of faith in JavaScript is disturbing (it's why you don't see anything, love).</noscript>
-    <div id="root"></div>
+    <div>
+      <noscript>This is not the page you're looking for. I find your lack of faith in JavaScript is disturbing (it's why you don't see anything, love).</noscript>
+      <div id="root"></div>
     </div>
+
+    <script>
+      WebFont.load({
+        google: {
+          families: ['Source+Sans+Pro:300,400,600']
+        }
+      });
+      
+      (function(d) {
+          var wf = d.createElement('script'), s = d.scripts[0];
+          wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+          wf.async = true;
+          s.parentNode.insertBefore(wf, s);
+      })(document);
+    </script>
   </body>
 </html>
