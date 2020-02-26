@@ -1,6 +1,8 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "itsjoy.fyi",
+    "short_name": "itsjoy.fyi",
+    "description": "Hi, my name is Joy. I build internetthings.",
+    "start_url": "/",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
