@@ -1,12 +1,5 @@
-# itsjoy.fyi
-To practice working with React.js and Styled Components, I redesigned and rewrote my portfolio. This project also allowed me to figure out version control on Github through the command line.
-
-### Built With
-React.js, Styled Components, Styled System, React Router, JavaScript.
-
-Wireframes and design made in Figma.
-
-Currently deployed through Netlify on [itsjoy.fyi](https://itsjoy.fyi).
+# development branch of itsjoy.fyi
+Branched out from master, I use this to experiment. Currently implementing content delivery through Contentful using their API.
 
 ### Author
 Joy van der Veeken - design and development
