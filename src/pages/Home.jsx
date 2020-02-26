@@ -1,57 +1,33 @@
 import React from 'react';
 import {
-    Switch,
-    Route
-} from 'react-router-dom'
+  Switch,
+  Route
+} from 'react-router-dom';
+import { Box } from '../components/shared/containers';
+import {
+  projects,
+  heroContent
+} from '../asset/content';
 
 import Navigation from '../components/shared/Navigation';
 import Hero from '../components/Hero';
-import {
-    Background,
-    Flex,
-    Box,
-} from '../components/shared/Containers';
 import About from './About';
 import Resume from './Resume';
-import {ABC, DEF} from './Projects'
-import { 
-    ProjectOne,
-    ProjectTwo,
-    ProjectThree,
-    ProjectFour 
-} from '../components/ProjectsHome'
-import displayOne from '../asset/project1.png'
-import displayTwo from '../asset/project2.jpg'
-import displayThree from '../asset/project3.jpg'
-import displayFour from '../asset/project4.jpg'
+import Project from './Projects';
+import Content from '../components/Content';
 
 const Home = () => {
+
   return (
     <Switch>
       <Route>
-        <Background position='fixed' zIndex='-1' top='0'/>
-        <Box>
+        <Box mobile padding='0' >
 
-          <Navigation/>
+          <Navigation />
 
-          <Flex width='100%' height='54.8vh'>
-            <Hero />
-          </Flex>
+          <Hero {...heroContent} />
 
-          <Flex height='50vh' background='#444' zIndex='999' margin='auto' bg={displayOne}>
-            <ProjectOne />
-            
-          </Flex>
-          <Flex height='50vh' background='#333' zIndex='999' margin='auto' bg={displayTwo}>
-            <ProjectTwo />
-          </Flex>
-
-          <Flex height='50vh' background='#444' zIndex='999' margin='auto' bg={displayThree}>
-            <ProjectThree />
-          </Flex>
-          <Flex height='50vh' background='#333' zIndex='999' margin='auto' bg={displayFour}>
-            <ProjectFour />
-          </Flex>
+          <Content />
 
           <Route path="/resume">
             <Resume />
@@ -59,12 +35,7 @@ const Home = () => {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/abc">
-            <ABC />
-          </Route>
-          <Route path="/def">
-            <DEF />
-          </Route>
+          {projects.map((project, i) => <Route key={i} path={project.path}><Project {...project} /></Route>)}
 
         </Box>
       </Route>

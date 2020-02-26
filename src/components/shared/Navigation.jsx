@@ -1,22 +1,18 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-
-import {
-    Flex, 
-    Image
-} from './Containers';
-import { Button } from './Typography';
-import Logo from '../../asset/logo.svg';
+import { Flex } from './containers';
+import { Link } from './Typography';
 
 const Navigation = () => {
-    return (
-        <Flex width='1024px' height='100px' justifyContent='space-between' alignItems='center' margin='auto' mt='500px' position='sticky' top='20px' zIndex='2'>
-            <Button to ="/resume" color='#FFF' border='2px dashed #fff' >Resume</Button>
-            <Link to ="/"><Image  width='100px' src={Logo} alt="Logo"/></Link>
-            <Button to ="/about" color='#FFF' border='2px dashed #fff' >About</Button>
-        </Flex>
-    )
+
+	return (
+		<Flex noclick width='100%' height='100vh' position={{ default: 'fixed', s: 'sticky' }} top='0' zIndex='1' justifyContent='space-between' alignItems={{ default: 'flex-end', s: 'flex-start' }} margin='auto' padding='4em' >
+
+			<Link nav='true' to="/resume" fontSize={{ default: '1em', s: '1.2em' }} color='#fff' border='none' >Resume</Link>
+
+			<Link nav='true' to="/about" fontSize={{ default: '1em', s: '1.2em' }} color='#fff' border='none'>About</Link>
+
+		</Flex>
+	)
 }
 
 export default Navigation
-

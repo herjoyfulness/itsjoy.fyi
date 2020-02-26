@@ -1,170 +1,170 @@
 import styled from 'styled-components';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import {
     color,
+    background,
     width,
-    fontFamily,
+    fontStyle,
     fontSize,
     fontWeight,
     textAlign,
+    lineHeight,
     margin,
+    padding,
     flexWrap,
     flexDirection,
-    border
+    border,
+    zIndex,
+    position
 } from 'styled-system';
 
-const H1 = styled.h1 `
-    font-size: 27px;
-    line-height: 36px;
+const H1 = styled.h1`
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+    line-height: 1.5em;
+    margin: 0;
+    font-display: swap;
+    ${color};
+    ${fontWeight};
+    ${fontSize};
+    ${lineHeight};
+    ${margin};
+    ${padding};
+    ${border};
+`
+
+const H2 = styled.h2`
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5em;
+    text-align: left;
+    font-display: swap;
+    ${fontWeight};
+    ${fontSize};
+    ${color};
+    ${background};
+    ${padding};
+`
+
+const H3 = styled.h3`
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.5em;
     text-align: justify;
-    ${fontFamily}
-    ${color}
-    ${fontWeight}   
-`
-
-const H2 = styled.h2 `
-    font-style: normal;
-    line-height: 24px;
-    ${fontFamily}
-    ${fontWeight}
-    ${fontSize}
-    ${color}
-`
-
-const H3 = styled.h3 `
-    font-family: Playfair Display;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
+    font-display: swap;
+    ${fontWeight};
     ${color};
-    ${textAlign}
+    ${textAlign};
 `
 
-const P = styled.p `
-    font-style: normal;
+const P = styled.p`
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
-    font-size: 16px;
-    margin: 4px 0;
-    ${fontFamily};
+    font-size: 1em;
+    margin: 0.25em 0;
+    font-display: swap;
+    ${fontStyle};
+    ${fontWeight};
     ${color};
-    ${margin}
+    ${margin};
+    ${textAlign};
 `
 
-const A = styled.a `
+const A = styled.a`
+    font-family: 'Source Sans Pro', sans-serif;
     color: #000;
-    font-weight: 300;
-    font-size: 16px;
-    padding-bottom: 0px;
+    font-weight: 400;
+    font-size: 1em;
+    padding-bottom: 0;
     text-decoration: none;
     box-sizing: border-box;
-    border-bottom: 2px solid #F48264;
+    pointer-events: auto;
+    fill: #FFF;
+    border-bottom: 0.125em solid #F48264;
     :hover{
-        font-weight: 300;
-        color: #F48264;
+        color: #FFF;
+        background: ${props => props.icon ? 'none' : '#F48264'};
+        fill: #000;
     }
-    ${fontFamily}
-    ${margin}
+    font-display: swap;
+    ${margin};
+    ${color};
+    ${fontWeight};
+    ${border};
+    ${textAlign};
 `
 
-const List = styled.ul `
+const FactList = styled.ul`
+    font-family: 'Source Sans Pro', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     list-style: none;
-    padding: 0px;
+    padding: 0;
     li {
-        margin: 8px 0px;
+        margin: 0.5em 0;
     };
-    ${textAlign}
-    ${margin}    
+    font-display: swap;
+    ${textAlign};
+    ${margin};
 `
 
-const SkillList = styled.ul `
-    width: 33%;
+const List = styled.ul`
     display: flex;
+    flex-direction: column;
     list-style: none;
     padding: 0;
     li{
         display: inline-block;
-        font-family: Lato;
-        font-weight: 400;
-        font-size: 16px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 300;
+        font-size: 1em;
         font-style: normal;
-        line-height: 24px;
-        margin: 8px 16px 8px 0;
+        line-height: 1.5em;
+        margin: 0.5em 1em 0.5em 0;
     }    
     h3{
-        font-family: Playfair Display;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 24px;
-        margin: 8px 16px 8px 0;        
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 1.5em;
+        margin: 0.5em 1em 0.5em 0;        
     }
-    ${margin}
-    ${color}
-    ${flexWrap}
-    ${flexDirection}
+    font-display: swap;
+    ${width};
+    ${margin};
+    ${color};
+    ${flexWrap};
+    ${flexDirection};
 `
 
-// const SkillList = styled.ul `
-//     ${margin}
-//     display: flex;
-//     flex-wrap: wrap;
-//     list-style: none;
-//     padding: 0;
-//     li{
-//         display: inline-block;
-//         font-family: Lato;
-//         font-size: 16px;
-//         line-height: 24px;
-//         color: #F48264;
-//         border: 2px dashed #F48264;
-//         background-color: #fff;
-//         padding: 4px 4px;
-//         margin: 8px 16px 8px 0;
-//     }
-// `
-
-const Break = styled.hr `
-    width: 40px;
-    height: 2px;
-    ${color}
-    ${margin}
-`
-
-
-const Button = styled(Link) `
-    ${color}
-    ${width}
-    ${border}
-    position: relative;
-    font-family: Lato;
+const AHome = styled(Link)`
+    font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1em;
+    line-height: 1.5em;
     text-align: center;
-    padding: 8px;
     text-decoration: none;
+    pointer-events: auto;
+    color: #FFF;
+    border-bottom: .1em solid #FFF;
     :hover {
         color: #000;
-        background-color: #FFF;         
+        background-color: ${props => props.nav ? 'none' : '#FFF'};
     }
+    font-display: swap;
+    ${position};
+    ${margin};
+    ${color};
+    ${width};
+    ${border};
+    ${background};
+    ${zIndex};
+    ${fontSize};
+    ${padding};
 `
-
-// const AboutLink = styled.a `
-
-//     ::before  {
-//         display: block;
-//         position: absolute;
-//         content: "";
-//         width: 40px;
-//         height: 4px;
-//         margin: 9px 0 0 -5px;
-//         z-index: -1;
-//         background-color: #F48264;
-//     }
-// `
 
 export {
     H1,
@@ -172,9 +172,7 @@ export {
     H3,
     P,
     A,
+    FactList,
     List,
-    SkillList,
-    Break,
-    Button
-    // AboutLink,
+    AHome as Link
 }
