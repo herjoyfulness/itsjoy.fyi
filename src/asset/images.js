@@ -1,5 +1,5 @@
 import abcHero from './abc/abchero.png';
-import houseofjoyHero from './houseofjoy/houseofjoyhero.png';
+import itsjoyHero from './itsjoy/itsjoyhero.png';
 import photographyHero from './photography/photographyhero.png';
 
 import Ber1 from './photography/ber1.jpg';
@@ -13,7 +13,7 @@ import Nat2 from './photography/nat2.jpg';
 
 export {
     abcHero,
-    houseofjoyHero,
+    itsjoyHero,
     photographyHero,
 
     Ber1,

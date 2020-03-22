@@ -1,6 +1,6 @@
 import {
     abcHero,
-    houseofjoyHero,
+    itsjoyHero,
     photographyHero,
     Ber1,
     Ber2,
@@ -18,10 +18,10 @@ export const heroContent = {
 
 export const projects = [
     {
-        path: '/houseofjoy',
-        title: 'House of Joy',
+        path: '/itsjoy',
+        title: 'itsjoy.fyi',
         source: undefined,
-        heroImage: houseofjoyHero,
+        heroImage: itsjoyHero,
         heroCopy: 'To practice working with React.js and Styled Components, I redesigned and rewrote my portfolio. This project also allowed me to figure out version control on Github through the command line.',
         bodyCopy: [
             'Wireframing was done in Figma, going for a mobile-centric design. I went for a compact approach by having the About and Resume pages lay on top of the homepage. These two pages have the same width as most common tablets do (give or take 768 pixels wide), which allowed for more consistency compared to, say, using viewport width.',
