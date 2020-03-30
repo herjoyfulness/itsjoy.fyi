@@ -51,7 +51,14 @@ const Resume = () => {
 
                 <FactList textAlign='justify'>
                     <li>
-                        <P fontWeight='400'>I have been a designer and photographer at House of Joy since 2010</P>
+                        <P fontWeight='400'>I have been a Software Engineer at Sainsbury's since March 2020.</P>
+                    </li>
+                    <li>
+                        <P fontWeight='400'>I was a freelance Front End Developer at itsjoy.fyi from August 2019 until March 2020</P>
+                        <P>At the beginning of 2019 I decided to branch out into front end development, and switched career from design to full-time development in August that same year. Proficient with html/css, JavaScript and React.js. Getting into TypeScript and Redux as of February 2020.</P>
+                    </li>
+                    <li>
+                        <P fontWeight='400'>I was a designer and photographer at itsjoy.fyi from 2010 until August 2019</P>
                         <P >For the past 9 years I’ve translated my clients’ visions into effective branding, print, websites and videos using photography as a supportive medium. I started operating under my own brandname as a designer and photographer 4 years after my first freelance job for a jeweler.</P>
                     </li>
                     <li>

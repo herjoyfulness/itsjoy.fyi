@@ -13,7 +13,7 @@ import {
 } from './images';
 
 export const heroContent = {
-    heroText: 'Hello! I used to colour boxes in the land of clogs and windmills. Now I make boxes from scratch in the green and pleasant land.'
+    heroText: 'Hello! I am a Software Engineer at Sainsbury\'s.'
 }
 
 export const projects = [
