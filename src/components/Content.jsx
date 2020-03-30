@@ -15,7 +15,7 @@ const HomeProject = () => {
             <Flex height='100vh'>
                 <Flex height='40vh' width={{ default: '60vw', l: '40vw' }} alignItems='center' margin='auto' bg={Joy}>
                     <H2 fontSize={{ default: '1.2em', m: '1.4em', l: '1.8em' }} color='#fff' textAlign='left' >
-                        I designed <Link to='/houseofjoy'>a new portfolio</Link> using my new-found React.js knowledge.
+                        I designed <Link to='/houseofjoy'>this portfolio</Link> using my new-found React.js knowledge.
                     </H2>
 
 

@@ -51,7 +51,8 @@ const Resume = () => {
 
                 <FactList textAlign='justify'>
                     <li>
-                        <P fontWeight='400'>I have been a Software Engineer at Sainsbury's since March 2020.</P>
+                        <P fontWeight='400'>I have been a Software Engineer at Sainsbury's Tech since March 2020</P>
+                        <P>Currently on a mission to make Sainsbury's the United Kingdom's number 1 multi-brand, multi-channel retailer.</P>
                     </li>
                     <li>
                         <P fontWeight='400'>I was a freelance Front End Developer at itsjoy.fyi from August 2019 until March 2020</P>
