@@ -78,7 +78,8 @@ const About = () => {
                     </li>
 
                     <li>
-                        <P fontWeight='400'>X - My most played track is <A href='https://open.spotify.com/track/6fcZNs8sOkLwMK2NPzfVWC'>I'm Not Gonna Teach Your Boyfriend How To Dance With You</A> by the Black Kids</P>
+                        <P fontWeight='400'>X - My most played track is <A href='https://open.spotify.com/track/6fcZNs8sOkLwMK2NPzfVWC'>I'm Not Gonna Teach Your Boyfriend How To Dance With You</A></P>
+                        <P>By indie rock band Black Kids</P>
                     </li>
 
                 </FactList>
