@@ -42,8 +42,8 @@ const About = () => {
                     </li>
 
                     <li>
-                        <P fontWeight='400'>III - My girlfriend and I adopted a <A href='https://www.instagram.com/p/B4h05Q_nX3V'>koi plakat siamese fighting fish</A></P>
-                        <P >He is known as Char, the Red Comet</P>
+                        <P fontWeight='400'>III - My girlfriend and I adopted a siamese fighting fish</P>
+                        <P >He is known as Estinien</P>
                     </li>
 
                     <li>
