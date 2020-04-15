@@ -61,7 +61,7 @@ const About = () => {
 
                     <li>
                         <P fontWeight='400'>VII - I wear a <A href='https://www.instagram.com/p/B1B_HUPnFg-'>mechanical watch</A> from the 1920s around my neck</P>
-                        <P >My great-grandmother received it as a wedding gift</P>
+                        <P >An heirlom, which my great-grandmother received it as a wedding gift</P>
                     </li>
 
                     {/* <li>
@@ -70,15 +70,15 @@ const About = () => {
 
                     <li>
                         <P fontWeight='400'>VIII - I try to travel to <A href='https://www.instagram.com/p/ByweETLCoJU'>a new place</A> once a year</P>
+                        <P>Next on the list is the land of the rising sun</P>
                     </li>
 
                     <li>
                         <P fontWeight='400'>IX - I was born and raised in <A href='https://en.wikipedia.org/wiki/Waalwijk'>Waalwijk</A>, the Netherlands</P>
-                        <P>I've also lived in Breda, a very cozy city</P>
                     </li>
 
                     <li>
-                        <P fontWeight='400'>X - My most played track is <A href='https://open.spotify.com/track/57q1oT76QVjLw7xnuCaAQc'>Dream Machine</A> by Dominik Eulberg</P>
+                        <P fontWeight='400'>X - My most played track is <A href='https://open.spotify.com/track/6fcZNs8sOkLwMK2NPzfVWC'>I'm Not Gonna Teach Your Boyfriend How To Dance With You</A> by the Black Kids</P>
                     </li>
 
                 </FactList>
