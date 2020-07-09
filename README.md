@@ -14,8 +14,7 @@ Joy van der Veeken - design and development
 ### Acknowledgments
 [Jackie Robson](https://github.com/Jackie-Robson) - code review and being a rubber duckling
 
-```
-html
+```html
 <h2>Example of code</h2>
 
 <pre>
