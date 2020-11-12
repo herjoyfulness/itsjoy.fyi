@@ -61,7 +61,7 @@ const About = () => {
 
                     <li>
                         <P fontWeight='400'>VII - I wear a <A href='https://www.instagram.com/p/B1B_HUPnFg-'>mechanical watch</A> from the 1920s around my neck</P>
-                        <P >An heirlom, which my great-grandmother received it as a wedding gift</P>
+                        <P >An heirloom, which my great-grandmother received as a wedding gift</P>
                     </li>
 
                     {/* <li>
