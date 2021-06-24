@@ -29,7 +29,7 @@ const About = () => {
                 <Image width='100%' src={PhotoMe} />
 
                 <H3 textAlign='justify' color='#000'>I'm Joy van der Veeken, a multi-disciplinary creative living in London until I get deported back from whence I came due to the United Kingdom leaving the European Union.</H3>
-                <H3 textAlign='justify' color='#000'>No one likes extended summaries of one's life, so here are 10 true facts about me.</H3>
+                <H3 textAlign='justify' color='#000'>No one likes extended summaries of one's life, so here are 10 random yet true facts about me.</H3>
 
                 <FactList textAlign='center' mb='1em'>
                     <li>
@@ -42,8 +42,8 @@ const About = () => {
                     </li>
 
                     <li>
-                        <P fontWeight='400'>III - My girlfriend and I adopted a siamese fighting fish</P>
-                        <P >He is known as Estinien</P>
+                        <P fontWeight='400'>III - My girlfriend and I adopted an eight month old <A href='https://lafeber.com/pet-birds/species/african-grey-parrot/'>African Gray</A> named Loki</P>
+                        <P >They're the smartest birds in the world and will outlive us</P>
                     </li>
 
                     <li>
@@ -64,14 +64,14 @@ const About = () => {
                         <P >An heirloom, which my great-grandmother received as a wedding gift</P>
                     </li>
 
-                    {/* <li>
-                        <P  >VIII - I starred in the opening movie of <A href='https://www.bbc.co.uk/sport/football/17760487'>Euro 2000</A></P>
-                    </li> */}
-
                     <li>
+                        <P fontWeight='400'>VIII - I starred in an opening movie of <A href='https://www.bbc.co.uk/sport/football/17760487'>Euro 2000</A></P>
+                    </li>
+
+                    {/* <li>
                         <P fontWeight='400'>VIII - I try to travel to <A href='https://www.instagram.com/p/ByweETLCoJU'>a new place</A> once a year</P>
                         <P>Next on the list is the land of the rising sun</P>
-                    </li>
+                    </li> */}
 
                     <li>
                         <P fontWeight='400'>IX - I was born and raised in <A href='https://en.wikipedia.org/wiki/Waalwijk'>Waalwijk</A>, the Netherlands</P>
